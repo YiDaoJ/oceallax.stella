@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+}
+
+#loading div{
+	width: 160px;
+	margin: 10% auto;
+}
+
+#loading img{
+	position: relative;
+	width: 150px;
+	/*margin: 20% auto;*/
+}
+
