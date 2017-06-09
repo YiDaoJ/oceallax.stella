@@ -1,9 +1,109 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<meta http-equiv="language" content="deutsch, de">
+	<title>Oceallax – Umweltschutz mit Stella</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>	
+	<script type="text/javascript" src="js/skrollr.js"></script>
+
+ 	<script type="text/javascript">
+
+    function loadingCheck() {
+        if (document.readyState != "complete") {
+      		// ladenAnimation();
+          // window.setTimeout(loadingCheck, 10000);
+        }
+        else {
+      		window.setTimeout(ladenAnimation, 1000);
+      		// window.setTimeout(document.getElementById('loading').id = 'loaded', 6000);
+          // document.getElementById('loading').id = 'loaded';
+        }
+    }
+
+    function ladenAnimation() {
+			var $elem = $('#loading_animation');
+
+			$({deg: 0}).animate({deg: 1080}, {
+				duration: 5000,
+				step: function(now) {
+					$elem.css({
+						transform: "rotate(" + now + "deg)"
+					});
+				}
+			});
+			window.setTimeout(showIntro, 5500);		
+			// document.getElementById('loading').id = 'loaded';
+		}
+
+		function showIntro() {
+			$('#intro').fadeIn('slow', function() {
+				$(this).css('display', 'block'); 
+			});				
+		}
+  </script>
+
 </head>
-<body>
-	<h1>Hello</h1>
+<body onload="loadingCheck()">
+	
+	<div id="loading">
+		<div id="loading_animation">
+		</div>			
+	</div>
+	
+
+	<main>
+		<!-- Intro -->
+		<div id="intro" class="viewport">
+
+			<div  id="intro_man1"
+						data-0="display: block;"	
+            data-500="opacity: 1;"
+            data-1000="display: none; opacity: 0;">
+				
+			</div>
+			<div  id="intro_man2"
+						data-0="display: block;"
+            data-500="opacity: 0;"
+            data-1100="opacity: 1;"
+            data-1800="display: none; opacity: 0;">
+				
+			</div>
+
+			<div 	id="intro_man3"
+						data-0="display: block;"
+            data-1000="opacity: 0;"
+            data-2000="opacity: 1;"
+            data-3000="display:none; opacity: 0;">
+				
+			</div>
+
+			<div  id="flasche"
+						data-0="display: block;"
+            data-1500="opacity: 0;"
+            data-2000="opacity: 1;"
+            data-2500="display:none; opacity: 0;">
+            	
+      </div>
+
+      <div  id="flasche"
+						data-0="display: block;"
+            data-2000="opacity: 0;"
+            data-2300="opacity: 1;"
+            data-2500="transform: translateX(10vw) rotate(130deg);"
+            data-3000="display:none; opacity: 0;">
+            	
+      </div>
+
+
+		</div>
+		
+
+	</main>
+
 </body>
 </html>
