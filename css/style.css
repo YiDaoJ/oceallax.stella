@@ -2,6 +2,7 @@ body {
 	margin: 0;
 }
 
+<<<<<<< HEAD
 #loading{
 	display: table;
 	position: fixed;
@@ -80,3 +81,16 @@ body {
 	background-size: contain;
 	transform: rotate(40deg);
 }
+=======
+#loading div{
+	width: 160px;
+	margin: 10% auto;
+}
+
+#loading img{
+	position: relative;
+	width: 150px;
+	/*margin: 20% auto;*/
+}
+
+>>>>>>> origin/master
