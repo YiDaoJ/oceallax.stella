@@ -1,0 +1,142 @@
+body {
+	margin: 0;
+}
+
+/* Loading Szene */
+
+#loading{
+	display: table;
+	position: fixed;
+	width: 100vw;
+	height: 100vw;
+	background-color: #EEE;
+	/*z-index: 10;*/
+}
+
+#loading_animation{
+	position: relative;
+  margin: auto;	
+  margin-top: 20%;
+	width: 200px;
+	height: 200px;	
+	background: url('../img/flasche.png') no-repeat center;
+	background-size: 50%;
+	/*background-color: red;*/
+}
+
+#loaded {
+	display: none;
+}
+
+.viewport {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+}
+
+/* intro */
+
+#intro {
+	display: none;
+	height: 100vh;
+	width: 100vw;
+	background: url('../img/background.jpg') no-repeat center;
+	background-size: 100%;
+}
+
+#intro_man1 {
+	position: absolute;
+	bottom: 0px;
+	left: 250px;
+	width: 300px;
+	height: 500px;
+	background: url('../img/man1.png') no-repeat;
+	background-size: contain;
+}
+
+#intro_man2 {
+	position: absolute;
+	bottom: 0px;
+	left: 250px;
+	width: 305px;
+	height: 540px;
+	background: url('../img/man2b.png') no-repeat;
+	background-size: contain;
+}
+
+#intro_man3 {
+	position: absolute;
+	bottom: 0px;
+	left: 250px;
+	width: 300px;
+	height: 500px;
+	background: url('../img/man3.png') no-repeat;
+	background-size: contain;
+}
+
+#flasche {
+	position: absolute;
+	top:370px;
+	left: 560px;
+	width: 100px;
+	height: 100px;
+	background: url('../img/flasche.png') no-repeat;
+	background-size: contain;
+	transform: rotate(40deg);
+}
+
+/* Szene - Story beginnen */
+
+#story_container {
+	/*position: absolute;*/
+	display: none;
+/*	top: 3200px;*/
+	width: 500vw;
+	height: 100vh;
+	background: url('../img/Himmel.png') no-repeat;
+	background-size: 100% 100%;
+	/*background-color: red;*/
+}
+
+#meer {
+	position: absolute;
+	bottom: 0px;
+	width: 300vw;
+	height: 90%;
+	background: url('../img/Meer.png') no-repeat;
+	background-size: 100% 100%;
+	z-index: 5;
+}
+
+#boden {
+	position: absolute;
+	bottom: 0px;
+	width: 200vw;
+	height: 15%;
+	background: url('../img/Boden2.png') no-repeat;
+	background-size: 100% 100%;
+	z-index: 10;
+	opacity: 1;
+}
+
+#berg {
+	position: absolute;
+	bottom: 0px;
+	width: 200vw;
+	height: 50%;
+	background: url('../img/Berg2.png') no-repeat;
+	background-size: 100% 100%;
+	z-index: 8;
+	opacity: .7;
+}
+
+#stella {
+	position: absolute;
+	bottom: 200px;
+	left: 200px;
+	width: 240px;
+	height: 160px;	
+	background: url('../img/Stella.png') no-repeat;
+	background-size: 100% 100%;
+	z-index: 20;
+}
