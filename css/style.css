@@ -2,12 +2,8 @@ body {
 	margin: 0;
 }
 
-<<<<<<< HEAD
 /* Loading Szene */
 
-=======
-<<<<<<< HEAD
->>>>>>> origin/master
 #loading{
 	display: table;
 	position: fixed;
@@ -38,11 +34,8 @@ body {
 	position: fixed;
 }
 
-<<<<<<< HEAD
 /* intro */
 
-=======
->>>>>>> origin/master
 #intro {
 	display: none;
 	height: 100vh;
@@ -53,11 +46,7 @@ body {
 
 #intro_man1 {
 	position: absolute;
-<<<<<<< HEAD
 	bottom: 0px;
-=======
-	top:200px;
->>>>>>> origin/master
 	left: 250px;
 	width: 300px;
 	height: 500px;
@@ -67,29 +56,17 @@ body {
 
 #intro_man2 {
 	position: absolute;
-<<<<<<< HEAD
 	bottom: 0px;
 	left: 250px;
 	width: 305px;
 	height: 540px;
 	background: url('../img/man2b.png') no-repeat;
-=======
-	top:200px;
-	left: 250px;
-	width: 300px;
-	height: 500px;
-	background: url('../img/man2.png') no-repeat;
->>>>>>> origin/master
 	background-size: contain;
 }
 
 #intro_man3 {
 	position: absolute;
-<<<<<<< HEAD
 	bottom: 0px;
-=======
-	top:200px;
->>>>>>> origin/master
 	left: 250px;
 	width: 300px;
 	height: 500px;
@@ -107,7 +84,6 @@ body {
 	background-size: contain;
 	transform: rotate(40deg);
 }
-<<<<<<< HEAD
 
 /* Szene - Story beginnen */
 
@@ -164,18 +140,3 @@ body {
 	background-size: 100% 100%;
 	z-index: 20;
 }
-=======
-=======
-#loading div{
-	width: 160px;
-	margin: 10% auto;
-}
-
-#loading img{
-	position: relative;
-	width: 150px;
-	/*margin: 20% auto;*/
-}
-
->>>>>>> origin/master
->>>>>>> origin/master
