@@ -200,10 +200,10 @@ body {
 }
 .text_Stella_Schildkroete p+p{
     position:absolute;
-    font-size: 1em;
+    font-size: 0.7em;
     font-style: normal;
-    left: 105px;
-    top:30px;
+    left: 27px;
+    top:10px;
     z-index: 20;
     font-family: 'Aklatanic TSO';
     text-align: center;
@@ -215,8 +215,8 @@ body {
     position:absolute;
     bottom: 400px;
     left: 200px;
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     background: url(../img/Sprechblase.png) no-repeat;
     background-size: 100% 100%;
     z-index:20;
@@ -224,11 +224,12 @@ body {
 
 #text_Schildkroete{
     position:absolute;
-    font-size: 1em;
+    font-size: 0.7em;
     font-style: normal;
-    left: 115px;
-    top:53px;
+    left: 40px;
+    top:15px;
     z-index: 20;
-    font-family: 'Aklatanic TSO'
+    font-family: 'Aklatanic TSO';
+    text-align: center;
 }
     
