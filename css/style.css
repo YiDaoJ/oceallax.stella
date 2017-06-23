@@ -199,7 +199,6 @@ body {
     height: 130px;
     text-align: center;
 }
-<<<<<<< HEAD
 
 
 #sprechblase_Stella_Schildkroete .text_Stella_Schildkroete p:first-child {
@@ -209,17 +208,6 @@ body {
     font-size: 1.5em;
     font-weight: bold;
     text-align: justify;
-=======
-.text_Stella_Schildkroete p+p{
-    position:absolute;
-    font-size: 0.7em;
-    font-style: normal;
-    left: 27px;
-    top:10px;
-<<<<<<< HEAD
->>>>>>> 7afad30f5d74b8a1ee65f777216f42a9a7daedf8
-=======
->>>>>>> 7afad30f5d74b8a1ee65f777216f42a9a7daedf8
     z-index: 20;
     /*background-color: yellow;*/
     
@@ -237,7 +225,6 @@ body {
 }
 
 
-<<<<<<< HEAD
 
 #sprechblase_Schildkroete {
     position:absolute;    
@@ -245,23 +232,11 @@ body {
     bottom: 360px;
     width: 300px;
     height: 200px;
-=======
-#sprechblase_Schildkroete{
-    position:absolute;
-    bottom: 400px;
-    left: 200px;
-    width: 200px;
-    height: 100px;
-<<<<<<< HEAD
->>>>>>> 7afad30f5d74b8a1ee65f777216f42a9a7daedf8
-=======
->>>>>>> 7afad30f5d74b8a1ee65f777216f42a9a7daedf8
     background: url(../img/Sprechblase.png) no-repeat;
     background-size: 100% 100%;
     z-index:20;
 }
 
-<<<<<<< HEAD
 .text_Schildkroete {
     position:relative;  
 	margin: 50px 35px; 
@@ -269,26 +244,12 @@ body {
     height: 130px;
     text-align: center;
     
-=======
-#text_Schildkroete{
-    position:absolute;
-    font-size: 0.7em;
-    font-style: normal;
-    left: 40px;
-    top:15px;
-    z-index: 20;
-    font-family: 'Aklatanic TSO';
-    text-align: center;
-<<<<<<< HEAD
->>>>>>> 7afad30f5d74b8a1ee65f777216f42a9a7daedf8
 }
 
 #sprechblase_Schildkroete .text_Schildkroete p:first-child {
 	font-size: 1.6em;
 	font-weight: bold;
 	text-align: justify;
-=======
->>>>>>> 7afad30f5d74b8a1ee65f777216f42a9a7daedf8
 }
 
 #sprechblase_Schildkroete .text_Schildkroete p:nth-child(2) {
