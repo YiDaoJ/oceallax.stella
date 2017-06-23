@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>	
 	<script type="text/javascript" src="js/skrollr.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
 
  	<script type="text/javascript">
 
@@ -109,104 +110,114 @@
 
 		<!-- Story -->
 
-		<div id="story_container" class="viewport" data-0="display:none;"
-															data-3200="display:block;">
-			<div id="himmel">
-				
-			</div>
+		<div 	id="story_container" class="viewport" 
+					data-0="display:none;"
+					data-3200="display:block;">
 
-			<div id="meer"
+<!-- 			<div 	id="himmel">
+				
+			</div> -->
+
+			<div 	id="meer"
 						data-3300="transform:translateX(0vw); display:block"
-						data-10000="transform:translateX(-180vw); display:block">
-							
-			</div>
-			
+						data-10000="transform:translateX(-180vw); display:block">							
+			</div>			
             
-            <div 	id="berg2" 
-						data-3300="transform:translateX(0vw); display:block"
-						data-10000="transform:translateX(-40vw); display:block">
+      <div 	id="berg2" 
+				 		data-3300="transform:translateX(0vw); display:block"
+				 		data-10000="transform:translateX(-40vw); display:block">
 			</div>
 
 			<div 	id="boden"
 						data-3300="transform:translateX(0vw); display:block"
-						data-10000="transform:translateX(-60vw); display:block">
-				
+						data-10000="transform:translateX(-60vw); display:block">				
 			</div>
 
-			<div id="stella"
-						data-3300="transform:translateX(0vw); display:block"
-						data-10000="transform:translateX(120vw); display:block">
-				
+			<div 	id="stella"
+						data-3300="transform:translateX(-20vw); display:block"
+						data-4600="transform:translateX(20vw);"
+						data-4800="transform:translateX(16vw);"
+						
+						>				
+						<!-- data-10000="transform:translateX(120vw); display:block" -->
 			</div>
             
-            <div id="flascheOben"
+      <div 	id="flascheOben"
 						data-3300="transform:translateX(0vw); display:block"
-                        data-10000="transform:translateX(120vw); display:block" >
-				
+            data-10000="transform:translateX(120vw); display:block">				
 			</div>
             
-           <!--Szene 1-->
+           <!--Szene 1: Spraech mit Schildkroete -->
             
-            <div id="stellaDialog" 
-                 
-                 data-15000="display:none;">
-            </div>
+<!--       <div id="stellaDialog"            
+           data-15000="display:none;">
+      </div> -->
+
+      <div 	id="schildkroete"
+            data-4000="opacity:0;display:block;"
+            data-4200="opacity:1;transform:translateX(0vw)"
+            data-5000="transform:translateX(-65vw); display:block;"
+            data-5000="transform:translateX(-65vw); display:block;"
+            >
+      </div> 
             
-            <div id="sprechblase_Stella_Schildkroete"
-                 data-4000="display: block; transform:translateX(60vw); opacity:0;"
-                 data-5000="opacity: 1;"
-                 data-6000="opacity: 1;"
-                 data-7200="opacity: 0;">
-                 
-                
-                <div class="text_Stella_Schildkroete"
-                     data-5000="display:block;"
-                     data-5500="display:block;"
-                     data-7200="display:none;">
-                    <p  data-5000="display:block;"
-                        data-5200="display:block;"
-                        data-6000="display:none;">Hallo, <br />ich bin Stella und<br /> wie heißt du?</p>
-                
-                     <p data-5000="display: none;"
-                     data-6000="display: block;"
-                     data-6500="display: block;"
-                     data-7000="display: none;">So einen außergewöhnlichen <br /> Panzer wie deinen <br />hab‘ ich in meinem<br/ >ganzen Leben noch<br /> nicht gesehen!</p>
-            </div>
-                     
-                    
-            </div>
-                 
-                  <div id="schildkroete"
-                      data-3300="transform:translateX(0vw); display:none"
-                      data-4000="transform:translateX(70vw); display:block">
-            </div>  
+      <div id="sprechblase_Stella_Schildkroete"
+           data-5000="display: block;opacity:0;"
+           data-5500="opacity: 1;" 
+           data-7000="opacity: 1;"
+           data-7200="opacity: 0;display:none;">
+           
+          
+        <div 	class="text_Stella_Schildkroete">
+
+          <p  data-5000="display: block;"
+              data-6000="display: none;">
+            Hallo, 
+            ich bin Stella und
+            wie heißt du?
+          </p>
+          
+          <p 	data-5000="display: none;opacity: 0;"
+          		data-6200="display: block;"
+           		data-6400="opacity: 1;"
+           		data-7000="display: none;">
+           	So einen außergewöhnlichen Panzer wie deinen hab' ich in meinemganzen Leben noch nicht gesehen!
+          </p>
+
+      	</div> <!-- end .text_Stella_Schildkroete -->
+
+      </div> <!-- end #sprechblase_Stella_Schildkroete -->              
+ 
             
-            <div id="sprechblase_Schildkroete"
-                 data-7200="display: block; transform:translateX(60vw); opacity:0;"
-                 data-7500="opacity: 1;"
-                 data-8000="opacity: 1;"
-                 data-8500="opacity: 0;">
-                 
-                
-                <div id="text_Schildkroete"
-                     data-7500="display:block;"
-                     data-8000="display:block;"
-                     data-8500="display:none;">
-                    <p>Hallo,<br />ich bin Peanut! <br />Den habe ich schon seit <br />ich denken kann.</p>
-                </div>
-                <div id="text_Schildkroete"
-                     data-8500="display: none;"
-                     data-9000="display: block;"
-                     data-9500="display: block;"
-                     data-10000="display: none;">
-                     
-                    <p>Das Ding, <br />das ich an meinem Panzer habe,<br /> schwimmt da hinten zu Haufe.</p>
-                        
-                
-		</div>
-		
-            </div>
-        </div>
+      <div 	id="sprechblase_Schildkroete"
+           	data-7200="display: block;opacity:0;"
+           	data-7500="opacity: 1;"
+           	data-9800="opacity: 1;"
+           	data-10000="opacity: 0;">           
+          
+        <div class="text_Schildkroete">
+
+            <p 	data-7300="display:block;opacity: 0;"
+            		data-7800="opacity: 1;"
+             		data-8500="display:none;">
+             	Hallo, ich bin Peanut! Den habe ich schon seit ich denken kann.
+             </p>
+
+            <p 	data-8000="display: none;opacity: 0;"
+            		data-8600="display: block;opacity: .5;"
+          			data-8800="display: block;opacity:1;"
+           			data-9700="opacity: .6;"
+           			data-10000="display: none;">
+            	Das Ding, das ich an meinem Panzer habe, schwimmt da hinten zu Haufe.
+            </p>
+
+        </div> <!-- end .text_Schildkroete -->        
+
+      </div> <!-- end #sprechblase_Schildkroete -->
+      
+
+    </div> <!-- end #story_container -->
+
 	</main>
 
 </body>

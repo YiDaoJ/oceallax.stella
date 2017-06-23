@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	font-family: 'Pangolin', cursive;
 }
 
 /* Loading Szene */
@@ -161,12 +162,14 @@ body {
     height: 200px;
     background: url(../img/Schildkroete.png);
     background-size: 100% 100%;
+    /*background-color: red;*/
     bottom: 200px;
-    left:350px;
+    left:1700px;
     z-index: 20;
+    opacity: 0;
 }
 
-#stellaDialog{
+/*#stellaDialog{
     position: absolute;
 	bottom: 200px;
 	left: 200px;
@@ -175,46 +178,58 @@ body {
 	background: url('../img/Stella.png') no-repeat;
 	background-size: 100% 100%;
 	z-index:20; 
-}
+}*/
 
 #sprechblase_Stella_Schildkroete{
     position:absolute;
-    bottom: 350px;
-    left: 200px;
-    width: 200px;
-    height: 100px;
+    bottom: 380px;
+    left: 600px;
+    width: 300px;
+    height: 150px;
     background: url(../img/Sprechblase%202.png) no-repeat;
     background-size: 100% 100%;
     z-index:20;
+    /*text-align: center;*/
 }
 
-.text_Stella_Schildkroete p{
-    position:absolute;
-    font-size: 1em;
-    font-style: normal;
-    left: 50px;
-    top:8px;
-    z-index: 20;
-    font-family: 'Aklatanic TSO';
+.text_Stella_Schildkroete {
+	position:relative;  
+	margin: 40px 30px; 
+    width: 230px; 
+    height: 130px;
     text-align: center;
 }
-.text_Stella_Schildkroete p+p{
-    position:absolute;
-    font-size: 1em;
-    font-style: normal;
-    left: 105px;
-    top:30px;
+
+
+#sprechblase_Stella_Schildkroete .text_Stella_Schildkroete p:first-child {
+    position:relative;  
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: justify;
     z-index: 20;
-    font-family: 'Aklatanic TSO';
-    text-align: center;
+    /*background-color: yellow;*/
     
+
+}
+
+#sprechblase_Stella_Schildkroete .text_Stella_Schildkroete p:nth-child(2){
+    position:relative;
+    margin-top: -5px;
+    margin-left: 15px;
+    font-size: 1em;
+    font-weight: bold;    
+    text-align: justify;
+    z-index: 20;    
 }
 
 
-#sprechblase_Schildkroete{
-    position:absolute;
-    bottom: 400px;
-    left: 200px;
+
+#sprechblase_Schildkroete {
+    position:absolute;    
+    left: 530px;
+    bottom: 360px;
     width: 300px;
     height: 200px;
     background: url(../img/Sprechblase.png) no-repeat;
@@ -222,13 +237,23 @@ body {
     z-index:20;
 }
 
-#text_Schildkroete{
-    position:absolute;
-    font-size: 1em;
-    font-style: normal;
-    left: 115px;
-    top:53px;
-    z-index: 20;
-    font-family: 'Aklatanic TSO'
-}
+.text_Schildkroete {
+    position:relative;  
+	margin: 50px 35px; 
+    width: 230px; 
+    height: 130px;
+    text-align: center;
     
+}
+
+#sprechblase_Schildkroete .text_Schildkroete p:first-child {
+	font-size: 1.6em;
+	font-weight: bold;
+	text-align: justify;
+}
+
+#sprechblase_Schildkroete .text_Schildkroete p:nth-child(2) {
+	font-size: 1.4em;
+	font-weight: bold;
+	text-align: justify;
+}
