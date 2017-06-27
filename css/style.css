@@ -48,30 +48,30 @@ body {
 
 #intro_man1 {
 	position: absolute;
-	bottom: 0%;
-	left: 18%;
-	width: 20%;
-	height: 67%;
+	bottom: 0px;
+	left: 250px;
+	width: 300px;
+	height: 500px;
 	background: url('../img/man1.png') no-repeat;
 	background-size: contain;
 }
 
 #intro_man2 {
 	position: absolute;
-	bottom: 0%;
-	left: 18%;
-	width: 21%;
-	height: 72.35%;
+	bottom: 0px;
+	left: 250px;
+	width: 305px;
+	height: 540px;
 	background: url('../img/man2b.png') no-repeat;
 	background-size: contain;
 }
 
 #intro_man3 {
 	position: absolute;
-	bottom: 0%;
-	left: 18%;
-	width: 20%;
-	height: 67%;
+	bottom: 0px;
+	left: 250px;
+	width: 300px;
+	height: 500px;
 	background: url('../img/man3.png') no-repeat;
 	background-size: contain;
 }
@@ -79,7 +79,7 @@ body {
 #flasche {
 	position: absolute;
 	top:370px;
-	left: 42%;
+	left: 540px;
 	width: 100px;
 	height: 100px;
 	background: url('../img/flasche.png') no-repeat;
@@ -128,10 +128,11 @@ body {
 #berg2 {
 	position: absolute;
 	bottom: 0px;
-	width: 200vw;
+	width: 800vw;
 	height: 70%;
-	background: url('../img/Berg.png') no-repeat;
-	background-size: 100% 100%;
+	background: url('../img/Berg.png');
+	background-repeat: repeat-x;
+	background-size: 2000px 100%;
 	z-index: 6;
 	opacity: .4;
 }
@@ -140,8 +141,8 @@ body {
 	position: absolute;
 	bottom: 200px;
 	left: 200px;
-	width: 240px;
-	height: 160px;	
+	width: 200px;
+	height: 140px;	
 	background: url('../img/Stella.png') no-repeat;
 	background-size: 100% 100%;
 	z-index:20;
@@ -149,22 +150,56 @@ body {
 
 #flascheOben {
     position:absolute;
-    width: 1.3%;
-    height: 33%;
+    left:420px;
+    bottom: 380px;
+    width: 100px;
+    height: 250px;
     background: url('../img/flasche.png') no-repeat;
     background-size: 70% 70%; 
-    left: 8%;
-    bottom: 60%;
     transform: rotate(80deg);
+}
+
+#stella_gedanken {
+	position: absolute;
+	width: 480px;
+	height: 340px;
+	bottom: 250px;
+	left: 600px;
+	background: url(../img/Denkblase.png) no-repeat;
+	background-size: 100% 100%;
+	/*background-color: orange;*/
+	z-index: 20;
+}
+
+#stella_gedanke_blaze {
+	position: relative;
+	width: 300px;
+	height: 220px;
+	margin-left: 150px;
+	margin-top: 50px;
+	/*background-color: red;*/
+	text-align: center;
+}
+
+#stella_gedanken #stella_gedanke_blaze p:first-child {
+	padding-top: 20px;
+	font-size: 1.8em;
+	text-align: justify-all;
+}
+
+#stella_gedanken #stella_gedanke_blaze p:last-child {
+	padding-top: 20px;
+	font-size: 1.7em;
+	text-align: justify-all;
 }
 
 #schildkroete{
     position: absolute;
-    width: 240px;
-    height: 200px;
+    width: 300px;
+    height: 270px;
     background: url(../img/Schildkroete.png);
     background-size: 100% 100%;
-    bottom: 200px;
+    bottom: 160px;
     left:1700px;
     z-index: 18;
     opacity: 0;
@@ -181,13 +216,14 @@ body {
 	z-index:20; 
 }*/
 
-#sprechblase_Stella_Schildkroete{
+#sprechblase_Stella_Schildkroete {
+
     position:absolute;
     bottom: 350px;
-    left: 600px;
+    left: 560px;
     width: 360px;
     height: 180px;
-    background: url(../img/Sprechblase%202.png) no-repeat;
+    /*background: url(../img/Sprechblase%202.png) no-repeat;*/
     background-size: 100% 100%;
     z-index:20;
     /*text-align: center;*/
