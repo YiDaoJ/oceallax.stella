@@ -1,214 +1,288 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="language" content="deutsch, de">
-	<title>Oceallax – Umweltschutz mit Stella</title>
-	
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>	
-	<script type="text/javascript" src="js/skrollr.js"></script>
-
- 	<script type="text/javascript">
-
-    function loadingCheck() {
-        if (document.readyState != "complete") {
-      		// ladenAnimation();
-          // window.setTimeout(loadingCheck, 10000);
-        }
-        else {
-      		window.setTimeout(ladenAnimation, 1000);
-      		// window.setTimeout(document.getElementById('loading').id = 'loaded', 6000);
-          // document.getElementById('loading').id = 'loaded';
-        }
-    }
-
-    function ladenAnimation() {
-			var $elem = $('#loading_animation');
-
-			$({deg: 0}).animate({deg: 1080}, {
-				duration: 5000,
-				step: function(now) {
-					$elem.css({
-						transform: "rotate(" + now + "deg)"
-					});
-				}
-			});
-			window.setTimeout(showIntro, 5500);		
-			// document.getElementById('loading').id = 'loaded';
-		}
-
-		function showIntro() {
-			$('#intro').fadeIn('slow', function() {
-				$(this).css('display', 'block'); 
-				$('#loading').css('display','none');
-			});				
-		}
-
-  </script>
-
-</head>
-
-<body onload="loadingCheck()">
-	
-	<div id="loading">
-		<div id="loading_animation">
-		</div>			
-	</div>
-	
-
-	<main>
-		<!-- Intro -->
-		<div 	id="intro" class="viewport" 
-					data-0="display:none;" 
-					data-1="display:block;" 
-					data-3200="display:none"  >
-
-			<div  id="intro_man1"
-						data-0="display: block;"	
-            data-500="opacity: 1;"
-            data-1000="display: none; opacity: 0;">
-				
-			</div>
-
-			<div  id="intro_man2"
-						data-0="display: block;"
-            data-500="opacity: 0;"
-            data-1100="opacity: 1;"
-            data-1800="display: none; opacity: 0;">
-				
-			</div>
-
-			<div 	id="intro_man3"
-						data-0="display: block;"
-            data-1000="opacity: 0;"
-            data-2000="opacity: 1;"
-            data-3000="display:none; opacity: 0;">
-				
-			</div>
-
-			<div  id="flasche"
-						data-0="display: block;"
-            data-1500="opacity: 0;"
-            data-2000="opacity: 1;"
-            data-2500="display:none; opacity: 0;">
-            	
-      </div>
-
-      <div  id="flasche"
-						data-0="display: block;"
-            data-2000="opacity: 0;"
-            data-2300="opacity: 1;"
-            data-2500="transform: translateX(10vw) rotate(130deg);"
-            data-3000="display:none; opacity: 0;">
-            	
-      </div>
-		</div>
-
-		<!-- Story -->
-
-		<div id="story_container" class="viewport" data-0="display:none;"
-															data-3200="display:block;">
-			<div id="himmel">
-				
-			</div>
-
-			<div id="meer"
-						data-3300="transform:translateX(0vw); display:block"
-						data-10000="transform:translateX(-180vw); display:block">
-							
-			</div>
-			
+ <html>
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta http-equiv="language" content="deutsch, de">
+ 	<title>Oceallax – Umweltschutz mit Stella</title>
+ 	
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	
+  	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+ 
+ 	
+  	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+  
+   	<script type="text/javascript">
+ 
+ 			window.setTimeout(showIntro, 5500);		
+ 			// document.getElementById('loading').id = 'loaded';
+ 		}
+ 
+ 		function showIntro() {
+ 			$('#intro').fadeIn('slow', function() {
+ 				$(this).css('display', 'block'); 
+ 				$('#loading').css('display','none');
+ 			});				
+ 		}
+ 
+   </script>
+ 
+ </head>
+ 
+ <body onload="loadingCheck()">
+ 	
+ 	<div id="loading">
+ 		<div id="loading_animation">
+ 		</div>			
+ 	</div>
+ 	
+ 
+ 	<main>
+ 		<!-- Intro -->
+ 		<div 	id="intro" class="viewport" 
+ 					data-0="display:none;" 
+ 					data-1="display:block;" 
+ 					data-3200="display:none"  >
+ 
+ 			<div  id="intro_man1"
+ 						data-0="display: block;"	
+             data-500="opacity: 1;"
+             data-1000="display: none; opacity: 0;">
+ 				
+ 			</div>
+ 
+ 			<div  id="intro_man2"
+ 						data-0="display: block;"
+             data-500="opacity: 0;"
+             data-1100="opacity: 1;"
+             data-1800="display: none; opacity: 0;">
+ 				
+ 			</div>
+ 
+ 			<div 	id="intro_man3"
+ 						data-0="display: block;"
+             data-1000="opacity: 0;"
+             data-2000="opacity: 1;"
+             data-3000="display:none; opacity: 0;">
+ 				
+ 			</div>
+ 
+ 			<div  id="flasche"
+ 						data-0="display: block;"
+             data-1500="opacity: 0;"
+             data-2000="opacity: 1;"
+             data-2500="display:none; opacity: 0;">
+             	
+       </div>
+ 
+       <div  id="flasche"
+ 						data-0="display: block;"
+             data-2000="opacity: 0;"
+             data-2300="opacity: 1;"
+             data-2500="transform: translateX(10vw) rotate(130deg);"
+             data-3000="display:none; opacity: 0;">
+             	
+       </div>
+ 		</div>
+ 
+ 		<!-- Story -->
+ 
+ 		<div 	id="story_container" class="viewport" 
+ 					data-0="display:none;"
+ 					data-3200="display:block;">
+ 
+ <!-- 			<div 	id="himmel">
+ 				
+ 			</div> -->
+  
+  			<div 	id="meer"
+  						data-3300="transform:translateX(0vw); display:block"
+						data-40000="transform:translateX(-720vw); display:block">							
+  			</div>			
+              
+        <div 	id="berg2" 
+  				 		data-3300="transform:translateX(0vw); display:block"
+                        data-40000="transform:translateX(-160vw); display:block">
+  			</div>
+  
+  			<div 	id="boden"
+  						data-3300="transform:translateX(0vw); display:block"
+			            data-40000="transform:translateX(-240vw); display:block">				
+  			</div>
+  
+  			<div 	id="stella"
+  						data-3300="transform:translateX(-20vw); display:block"
+  						data-4600="transform:translateX(20vw);"
+  						data-4800="transform:translateX(16vw);"
+ 
+             data-22000="transform: translateX(16vw);"
+             data-30000="transform: translateX(20vw);"
+  						
+  						>				
+  						<!-- data-10000="transform:translateX(120vw); display:block" -->
+ 			</div>
+             
+       <div 	id="flascheOben"
+ 						data-3300="transform:translateX(0vw); display:block"
+             data-10000="transform:translateX(120vw); display:block">				
+ 			</div>
+             
+            <!--Szene 1: Spraech mit Schildkroete -->
+             
+ <!--       <div id="stellaDialog"            
+            data-15000="display:none;">
+        </div> -->
+  
+        <div 	id="schildkroete"
+             data-4000="opacity:0 ;display:block;"
+             data-4200="opacity:1; transform:translateX(0vw)"
+             data-5000="transform: translateX(-65vw);"
+             data-22000="transform: translateX(-65vw);"
+             data-25000="transform: translateX(-130vw); opacity: .6;"
+             data-28000="transform: translateX(-180vw); opacity: .2;"            
+              >
+        </div> 
+              
+      
+       <div  id="sprechblase_Stella_Schildkroete"
+             data-5000="display: block;opacity:0;"
+             data-5500="opacity: 1;" 
+             data-6800="opacity: 1;"
+             data-7000="opacity: .3;"
+             data-7200="display:none;"
+ 
+             data-10000="display: block; opacity:.3;"
+             data-10300="opacity: 1;"
+             data-11200="opacity: .5;"
+             data-11400="opacity: .1;"
+             data-11500="display: none;"
+ 
+             data-15000="display: block; opacity: .3;"
+             data-15300="opacity: 1;"
+            data-16300="opacity: .5;"
+             data-16800="opacity: .1;"
+             data-17000="display: none;"
+ 
+             data-19500="display: block; opacity: .3;"
+             data-19800="opacity: 1;"
+             data-21000="opacity: 1;"
+             data-21300="opacity: .5;"
+             data-21500="display: none;">
+             
             
-            <div 	id="berg2" 
-						data-3300="transform:translateX(0vw); display:block"
-						data-10000="transform:translateX(-40vw); display:block">
-			</div>
-
-			<div 	id="boden"
-						data-3300="transform:translateX(0vw); display:block"
-						data-10000="transform:translateX(-60vw); display:block">
-				
-			</div>
-
-			<div id="stella"
-						data-3300="transform:translateX(0vw); display:block"
-						data-10000="transform:translateX(120vw); display:block">
-				
-			</div>
+          <div 	class="text_Stella_Schildkroete">
+  
+            <p  data-5000="display: block;"
+                data-6000="display: none;">            
+             Hallo, ich bin Stella und wie heißt du?
+            </p>
             
-            <div id="flascheOben"
-						data-3300="transform:translateX(0vw); display:block"
-                        data-10000="transform:translateX(120vw); display:block" >
-				
-			</div>
+            <p 	data-5000="display: none;opacity: 0;"
+           		data-6200="display: block;"
+            		data-6400="opacity: 1;"
+            		data-7000="display: none;">
+             	So einen außergewöhnlichen Panzer wie deinen hab' ich in meinemganzen Leben noch nicht gesehen!
+            </p>
+  
+           <p  data-10000="display: none;"
+               data-10200="display: block; opacity: .5;"
+               data-10600="opacity: 1;"
+               data-11200="opacity: .5;"
+               data-11400="display: none;">
+            Tut das denn weh?
+          </p>
+ 
+           <p  data-15000="display: none;"
+               data-15200="display: block; opacity: 0.5"
+               data-15500="opacity: 1;"
+               data-16300="opacity: .6;"
+               data-16800="display: none;">
+             Aber ich möchte unbedingt wissen, was mit der Flasche passiert!
+           </p>
+ 
+           <p  data-19500="display: none;"
+              data-19800="display: block; opacity: 1;"
+               data-20800="opacity: 1;"
+               data-21000="opacity: .5;"
+               data-21300="opacity: .1;"
+              data-21500="display: none;">
+             Danke für deinen Rat, ich werde mal schnell weiterschwimmen, bevor ich die Flasche aus den Augen verliere. Machs gut!
+           </p>
+ 
+        	</div> <!-- end .text_Stella_Schildkroete -->
+  
+        </div> <!-- end #sprechblase_Stella_Schildkroete -->              
+  
+             
+       <div id="sprechblase_Schildkroete"
+             	data-7200="display: block;opacity:0;"
+             	data-7500="opacity: 1;"
+             	data-9800="opacity: 1;"
+          
+                data-10000="opacity: 0; display:none;"
+ 
+                data-11600="display: block;opacity: .3;"
+                data-11900="opacity: 1;"
+                data-14000="opacity: 1;"
+                data-14300="opacity: .5;"
+                data-14800="display: none;"
+ 
+                data-17300="display:block; opacity: .3;"
+                data-17600="opacity: 1;"
+                data-18500="opacity: 1;"
+                data-18800="opacity: .5;"
+                data-19300="display: none;">           
             
-           <!--Szene 1-->
-            
-            <div id="stellaDialog" 
-                 
-                 data-10000="display:none;">
-            </div>
-            
-            <div id="sprechblase_Stella_Schildkroete"
-                 data-4000="display: block; transform:translateX(60vw); opacity:0;"
-                 data-5000="opacity: 1;"
-                 data-6000="opacity: 1;"
-                 data-7200="opacity: 0;">
-                 
-                
-                <div class="text_Stella_Schildkroete"
-                     data-5000="display:block;"
-                     data-5500="display:block;"
-                     data-7200="display:none;">
-                    <p  data-5000="display:block;"
-                        data-5200="display:block;"
-                        data-6000="display:none;">Hallo, <br />ich bin Stella und<br /> wie heißt du?</p>
-                
-                     <p data-5000="display: none;"
-                     data-6000="display: block;"
-                     data-6500="display: block;"
-                     data-7000="display: none;">So einen außergewöhnlichen <br /> Panzer wie deinen <br />hab‘ ich in meinem<br/ >ganzen Leben noch<br /> nicht gesehen!</p>
-            </div>
-                     
-                    
-            </div>
-                 
-                  <div id="schildkroete"
-                      data-3300="transform:translateX(0vw); display:none"
-                      data-4000="transform:translateX(-140vw); display:block">
-            </div>  
-            
-            <div id="sprechblase_Schildkroete"
-                 data-7200="display: block; transform:translateX(60vw); opacity:0;"
-                 data-7500="opacity: 1;"
-                 data-8000="opacity: 1;"
-                 data-8500="opacity: 0;">
-                 
-                
-                <div id="text_Schildkroete"
-                     data-7500="display:block;"
-                     data-8000="display:block;"
-                     data-8500="display:none;">
-                    
-                    <p data-7500="display:block;"
-                     data-8000="display:block;"
-                     data-8500="display:none;">Hallo,<br />ich bin Peanut! <br />Den habe ich schon seit <br />ich denken kann.</p>
-                
-                     
-                    <p data-8500="display: none;"
-                     data-9000="display: block;"
-                     data-9500="display: block;"
-                     data-10000="display: none;">Das Ding, <br />das ich an meinem Panzer habe,<br /> schwimmt da hinten zu Haufe.</p>
-                        
-                </div>    
-		</div>
-		
-            </div>
-        
-	</main>
-
-</body>
-</html>
+          <div class="text_Schildkroete">
+  
+             <p     data-7300="display:block;opacity: 0;"
+             		data-7800="opacity: 1;"
+              		data-8500="display:none;">
+              	Hallo, ich bin Peanut! Den habe ich schon seit ich denken kann.
+              </p>
+ 
+             <p   	data-8000="display: none;opacity: 0;"
+                data-8600="display: block;opacity: .5;"
+                data-8800="display: block;opacity:1;"
+                data-9700="opacity: .6;"
+                data-10000="display: none;">
+              	Das Ding, das ich an meinem Panzer habe, schwimmt da hinten zu Haufe.
+              </p>
+  
+             <p  data-11700="display: none;"
+                 data-11800="display: block; opacity: .4;"
+                 data-12200="opacity: 1;"
+                 data-12800="opacity: .5;"
+                 data-13100="display: none;">
+               Nein, ich habe keine Schmerzen. Aber ich habe hier schon so einige Tiere gesehen, die sich an den Flossen verletzt haben oder stranguliert wurden. 
+             </p>            
+             <p  data-13100="display:none;"
+                 data-13200="display: block; opacity: .4;"
+                 data-13600="opacity: 1;"
+                 data-14200="opacity: .5;"
+                 data-14500="display: none;">
+               Erst vor kurzen bin ich einem Delfin begegnet, der sich so die Flosse verletzt hat. Schwimm besser nicht in die Richtung!
+             </p>
+ 
+             <p  data-17300="display: none;"
+                data-17600="display: block; opacity: .4;"
+                 data-18000="opacity: 1;"
+                 data-18800="opacity: .5;"
+                 data-19100="display: none;">
+               Na gut, du bist ja noch klein und wendig, aber pass trotzdem auf, wo du hinschwimmst!
+            </p>
+ 
+          </div> <!-- end .text_Schildkroete -->        
+  
+        </div> <!-- end #sprechblase_Schildkroete -->
+       
+ 
+     </div> <!-- end #story_container -->
+  
+  	</main>
+  
+   <script type="text/javascript" src="js/main.js"></script> 
+   <script type="text/javascript" src="js/skrollr.js"></script>
+ 
+  </body>
+  </html>
