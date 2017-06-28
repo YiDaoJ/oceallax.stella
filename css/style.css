@@ -207,7 +207,7 @@ body {
 #schildkroete{
     position: absolute;
 	bottom: 23%;
-    left: 1700px;
+    left: 800px;
     width: 300px;
     height: 220px;
 	background: url(../img/Schildkroete.png);
@@ -281,7 +281,7 @@ body {
 
 #sprechblase_Schildkroete {
     position:absolute;    
-    left: 460px;
+    left: 420px;
     bottom: 330px;
     width: 360px;
     height: 240px;
