@@ -9,8 +9,10 @@ body {
 	display: table;
 	position: fixed;
 	width: 100vw;
-	height: 100vw;
-	background-color: #EEE;
+	height: 100%;
+	background: url(../img/Schatzkarte.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
 	/*z-index: 10;*/
     
 }
@@ -42,7 +44,7 @@ body {
 	display: none;
 	height: 100vh;
 	width: 100vw;
-	background: url('../img/background.jpg') no-repeat center;
+	background: url('../img/Intro.jpg') no-repeat center;
 	background-size: 100%;
 }
 
@@ -117,7 +119,7 @@ body {
 	bottom: 0px;
 	width: 800vw;
 	height: 20%;
-	background: url('../img/Fertig-Boden.png');
+	background: url('../img/Boden.png');
 	background-repeat: repeat-x;	
 	background-size: 3500px 100%;
 	z-index: 10;
@@ -139,7 +141,7 @@ body {
 #stella {
 	display: block;
 	position: absolute;
-	bottom: 160px;
+	bottom: 23%;
 	left: -150px;
 	width: 200px;
 	height: 140px;	
@@ -151,7 +153,7 @@ body {
 #flascheOben {
     position:absolute;
     left:520px;
-    bottom: 400px;
+    bottom: 69%;
     width: 100px;
     height: 180px;
     background: url('../img/flasche.png') no-repeat;
