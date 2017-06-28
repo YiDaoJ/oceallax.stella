@@ -50,7 +50,7 @@ body {
 
 #intro_man1 {
 	position: absolute;
-	bottom: 0px;
+    bottom: 0%;
 	left: 250px;
 	width: 300px;
 	height: 500px;
@@ -60,7 +60,7 @@ body {
 
 #intro_man2 {
 	position: absolute;
-	bottom: 0px;
+    bottom: 0%;
 	left: 250px;
 	width: 305px;
 	height: 540px;
@@ -70,7 +70,7 @@ body {
 
 #intro_man3 {
 	position: absolute;
-	bottom: 0px;
+	bottom: 0%;
 	left: 250px;
 	width: 300px;
 	height: 500px;
@@ -80,8 +80,8 @@ body {
 
 #flasche {
 	position: absolute;
-	top:370px;
-	left: 540px;
+	top: 50%;
+	left: 40%;
 	width: 100px;
 	height: 100px;
 	background: url('../img/flasche.png') no-repeat;
@@ -142,9 +142,9 @@ body {
 	display: block;
 	position: absolute;
 	bottom: 23%;
-	left: -150px;
-	width: 200px;
-	height: 140px;	
+	left: -1.8%;
+	width: 2.6%;
+	height: 18%;	
 	background: url('../img/Stella.png') no-repeat;
 	background-size: 80% 80%;
 	z-index:20;
@@ -152,10 +152,10 @@ body {
 
 #flascheOben {
     position:absolute;
-    left:520px;
-    bottom: 69%;
-    width: 100px;
-    height: 180px;
+    left: 7.5%;
+    bottom: 70%;
+    width: 1.2%;
+    height: 24%;
     background: url('../img/flasche.png') no-repeat;
     background-size: 70% 100%; 
 	/*background-color: red;*/
@@ -165,10 +165,10 @@ body {
 
 #stella_gedanken {
 	position: absolute;
-	width: 480px;
-	height: 340px;
-	bottom: 200px;
-	left: 600px;
+	width: 6.3%;
+	height: 45%;
+	bottom: 30%;
+	left: 8%;
 	background: url(../img/Denkblase.png) no-repeat;
 	background-size: 85% 85%;
 	transform: rotate(10deg);
@@ -179,16 +179,16 @@ body {
 
 #stella_gedanke_blaze {
 	position: relative;
-	width: 260px;
-	height: 200px;
-	margin-left: 120px;
-	margin-top: 50px;	
+	width: 55%;
+	height: 38%;
+	margin-left: 24.5%;
+	margin-top: 11%;	
 	text-align: center;
 	
 }
 
 #stella_gedanken #stella_gedanke_blaze p:first-child {
-	padding-top: 5px;
+	padding-top: 3%;
 	font-size: 1.6em;
 	font-weight: bold;
 	text-align: justify-all;
@@ -207,9 +207,9 @@ body {
 #schildkroete{
     position: absolute;
 	bottom: 23%;
-    left: 800px;
-    width: 300px;
-    height: 220px;
+    left: 13%;
+    width: 4%;
+    height: 28%;
 	background: url(../img/Schildkroete.png);
     background-size: 100% 100%;
     z-index: 18;
@@ -218,10 +218,10 @@ body {
 
 #sprechblase_Stella_Schildkroete {
     position:absolute;
-    bottom: 320px;
-    left: 510px;
-    width: 350px;
-    height: 210px;
+    bottom: 45%;
+    left: 8.5%;
+    width: 4.7%;
+    height: 27%;
     background: url(../img/Sprechblase2.png) no-repeat;
     background-size: 100% 100%;
     z-index:20;
@@ -231,9 +231,9 @@ body {
 
 .text_Stella_Schildkroete {
 	position:relative;  
-	margin: 40px 30px; 
-    width: 300px; 
-    height: 130px;
+	margin: 9% 8%; 
+    width: 85%; 
+    height: 65%;
     text-align: center;
 }
 
@@ -247,44 +247,39 @@ body {
 
 
 #sprechblase_Stella_Schildkroete .text_Stella_Schildkroete p:first-child {
-    padding-top: 35px;
-    padding-left: 10px;
+    padding-top: 14%;
     font-size: 1.8em;
     /*background-color: yellow;*/
 }
 
 #sprechblase_Stella_Schildkroete .text_Stella_Schildkroete p:nth-child(2) {
-    padding-top: 15px;
-    /*margin-left: 15px;*/
+    padding-top: 7%;
     font-size: 1.4em;
     letter-spacing: 1px;
 }
 
 #sprechblase_Stella_Schildkroete .text_Stella_Schildkroete p:nth-child(3) {
-    margin-top: 70px;
-    margin-left: 30px;
+    margin-top: 27%;
     font-size: 2em;  
 }
 
 #sprechblase_Stella_Schildkroete .text_Stella_Schildkroete p:nth-child(4) {
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 13%;
     font-size: 1.8em;  
 }
 
 #sprechblase_Stella_Schildkroete .text_Stella_Schildkroete p:last-child {
-    padding-top: 15px;
-    margin-left: 5px;
-    font-size: 1.4em;  
+    padding-top: 6%;
+    font-size: 1.4em; 
 }
 
 
 #sprechblase_Schildkroete {
     position:absolute;    
-    left: 420px;
-    bottom: 330px;
-    width: 360px;
-    height: 240px;
+    left: 6.5%;
+    bottom: 43%;
+    width: 5%;
+    height: 32%;
     background: url(../img/Sprechblase.png) no-repeat;
     background-size: 100% 100%;
     z-index:20;
@@ -292,9 +287,9 @@ body {
 
 .text_Schildkroete {
     position:relative;  
-	margin: 50px 35px; 
-    width: 300px; 
-    height: 150px;
+	margin: 9% 10%; 
+    width: 80%; 
+    height: 74%;
     text-align: center;
 }
 
@@ -306,26 +301,26 @@ body {
 }
 
 #sprechblase_Schildkroete .text_Schildkroete p:first-child {
-	padding-top: 20px;
+	padding-top: 14%;
 	font-size: 1.8em;
 }
 
 #sprechblase_Schildkroete .text_Schildkroete p:nth-child(2) {
-	padding-top: 10px;
+	padding-top: 9%;
 	font-size: 1.7em;
 }
 
 #sprechblase_Schildkroete .text_Schildkroete p:nth-child(3) {
-	padding-top: 5px;
+	padding-top: 6%;
 	font-size: 1.4em;
 }
 
 #sprechblase_Schildkroete .text_Schildkroete p:nth-child(4) {
-	padding-top: 5px;
+	padding-top: 6%;
 	font-size: 1.5em;
 }
 
 #sprechblase_Schildkroete .text_Schildkroete p:nth-child(5) {
-	padding-top: 18px;
+	padding-top: 10%;
 	font-size: 1.6em;
 }
