@@ -292,3 +292,56 @@ body {
 	padding-top: 18px;
 	font-size: 1.6em;
 }
+
+#koralle{
+    position: absolute;
+	bottom: 23%;
+    left: 13%;
+    width: 4%;
+    height: 28%;
+	background: url(../img/Koralle.png);
+    background-size: 100% 100%;
+    z-index: 18;
+}
+
+#sprechblase_Stella_Koralle {
+    position:absolute;
+    bottom: 45%;
+    left: 8.5%;
+    width: 4.7%;
+    height: 27%;
+    background: url(../img/Sprechblase2.png) no-repeat;
+    background-size: 100% 100%;
+    z-index:20;
+	transform: rotate(-5deg);
+    /*text-align: center;*/
+	background-color: deeppink;
+}
+
+#sprechblase_Koralle {
+    position:absolute;    
+    left: 6.5%;
+    bottom: 43%;
+    width: 5%;
+    height: 32%;
+    background: url(../img/Sprechblase.png) no-repeat;
+    background-size: 100% 100%;
+    z-index:20;
+}
+
+.text_Stella_Koralle {
+	position:relative;  
+	margin: 9% 8%; 
+    width: 85%; 
+    height: 65%;
+    text-align: center;
+}
+
+.text_Koralle {
+    position:relative;  
+	margin: 9% 10%; 
+    width: 80%; 
+    height: 74%;
+    text-align: center;
+	background-color: green;
+}
