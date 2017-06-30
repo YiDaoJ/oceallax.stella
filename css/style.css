@@ -324,3 +324,31 @@ body {
 	padding-top: 10%;
 	font-size: 1.6em;
 }
+
+#infotext1 {
+    position:absolute;     
+    width: 100vw;
+    height: 100vh;
+    z-index:20;
+}
+
+#seifenblase_container {
+    position: relative;
+    margin: 20px auto;
+    width: 55vw;
+    height: 95vh;
+    background: url(../img/Seifenblase.png) no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+#seifenblase_container p {
+    position: absolute;
+    top: 12vh;
+    left: 10vw;
+    width: 35vw;
+    height: 80vh;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 32px;
+}
