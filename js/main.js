@@ -5,6 +5,4 @@ $(document).ready(function(){
 	var s = skrollr.init();
 	// console.log('test');
 	// ladenAnimation();
-	// console.log(window.pageYOffset);
 });
-
