@@ -355,11 +355,12 @@ body {
 
 #koralle{
     position: absolute;
-	bottom: 23%;
+	bottom: 3%;
     left: 13%;
-    width: 4%;
-    height: 28%;
+    width: 5%;
+    height: 35%;
 	background: url(../img/Koralle.png);
+/*	background-color: orange;*/
     background-size: 100% 100%;
     z-index: 18;
 }
