@@ -5,51 +5,12 @@
 	<meta http-equiv="language" content="deutsch, de">
 	<title>Oceallax – Umweltschutz mit Stella</title>
     
-	<link rel="icon" href="img/Stella.png" type="image/png"/>
-    
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
-	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-	
+	<link rel="icon" href="img/Stella.png" type="image/png"/>    
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>	
+  <script type="text/javascript" src="js/main.js"></script> 
+  <script type="text/javascript" src="js/skrollr.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
-
- 	<script type="text/javascript">
-
-    function loadingCheck() {
-        if (document.readyState != "complete") {
-      		// ladenAnimation();
-          // window.setTimeout(loadingCheck, 10000);
-        }
-        else {
-      		window.setTimeout(ladenAnimation, 1000);
-      		// window.setTimeout(document.getElementById('loading').id = 'loaded', 6000);
-          // document.getElementById('loading').id = 'loaded';
-        }
-    }
-
-    function ladenAnimation() {
-			var $elem = $('#loading_animation');
-
-			$({deg: 0}).animate({deg: 1080}, {
-				duration: 5000,
-				step: function(now) {
-					$elem.css({
-						transform: "rotate(" + now + "deg)"
-					});
-				}
-			});
-			window.setTimeout(showIntro, 5500);		
-			// document.getElementById('loading').id = 'loaded';
-		}
-
-		function showIntro() {
-			$('#intro').fadeIn('slow', function() {
-				$(this).css('display', 'block'); 
-				$('#loading').css('display','none');
-			});				
-		}
-
-  </script>
 
 </head>
 
@@ -58,15 +19,19 @@
 	<div id="loading">
 		<div id="loading_animation">
 		</div>			
-	</div>
-	
+	</div>	
+
+  <div>
+    <audio id="bubble_sound">
+      <source src="audio/bubble.mp3"/>
+    </audio>
+  </div>
 
 	<main>
 		<!-- Intro -->
-		<div 	id="intro" class="viewport" 
-					data-0="display:none;" 
-					data-1="display:block;" 
-					data-3200="display:none"  >
+		<div 	id="intro" class="viewport"
+					data-0="display:block;" 
+					data-3200="display:none">
 
 			<div  id="intro_man1"
             data-0="display: block;"	
@@ -85,90 +50,90 @@
             data-0="display: block;"
             data-1000="opacity: 0;"
             data-2000="opacity: 1;"
-            data-3000="display:none; opacity: 0;">				
+            data-3200="display:none;">				
 			</div>
 
-			<div  id="flasche"
+			<div  id="flasche_pos1"
             data-0="display: block;"
             data-1500="opacity: 0;"
             data-2000="opacity: 1;"
             data-2500="display:none; opacity: 0;">       	
       </div>
 
-      <div  id="flasche"
-            data-0="display: block;"
-            data-2000="opacity: 0;"
+      <div  id="flasche_pos2"
+            data-1599="display: none;"
+            data-2000="display: block; opacity: 0;"
             data-2300="opacity: 1;"
             data-2500="transform: translateX(10vw) rotate(130deg);"
-            data-3000="display:none; opacity: 0;">          	
+            data-3000="opacity: 0;"
+            data-3200="display: none;">          	
       </div>
-
 		</div>  <!-- end #intro -->
 
 		<!-- Story -->
 
 		<div 	id="story_container" class="viewport" 
-				data-0="display:none;"
-                data-3200="display:block;">
+				  data-0="display:none;"
+          data-3200="display:block;">
 
 			<div 	id="meer"
 				    data-3300="transform:translateX(0vw); display:block"
 
-                    data-4000="transform: translateX(-5vw);"
-                    data-8000="transform: translateX(-5vw)"
+            data-4000="transform: translateX(-5vw);"
+            data-8000="transform: translateX(-5vw)"
 
-                    data-11200="transform: translateX(-50vw)"
-                    data-29000="transform: translateX(-50vw);"
+            data-11200="transform: translateX(-50vw)"
+            data-29000="transform: translateX(-50vw);"
 
-                    data-90000="transform:translateX(-200vw); display:block">							
+            data-90000="transform:translateX(-200vw); display:block">							
 			</div>			
             
-            <div 	id="berg2" 
-                    data-3300="transform:translateX(0vw); display:block"
+      <div 	id="berg2" 
+            data-3300="transform:translateX(0vw); display:block"
 
-                    data-4000="transform: translateX(-20vw);"
-                    data-8000="transform: translateX(-20vw)"
+            data-4000="transform: translateX(-20vw);"
+            data-8000="transform: translateX(-20vw)"
 
-                    data-11200="transform: translateX(-80vw)"
-                    data-29000="transform: translateX(-80vw);"
+            data-11200="transform: translateX(-80vw)"
+            data-29000="transform: translateX(-80vw);"
 
-                    data-90000="transform:translateX(-400vw); display:block">
-			</div>
+            data-90000="transform:translateX(-400vw); display:block">
+      </div>
 
 			<div 	id="boden"
-                    data-3300="transform:translateX(0vw); display:block"
+            data-3300="transform:translateX(0vw); display:block"
 
-                    data-4000="transform: translateX(-40vw);"
-                    data-8000="transform: translateX(-40vw)"
+            data-4000="transform: translateX(-40vw);"
+            data-8000="transform: translateX(-40vw)"
 
-                    data-11200="transform: translateX(-120vw)"
-                    data-29000="transform: translateX(-120vw);"
+            data-11200="transform: translateX(-120vw)"
+            data-29000="transform: translateX(-120vw);"
 
-                    data-90000="transform:translateX(-820vw); display:block">   				
+            data-90000="transform:translateX(-820vw); display:block">   				
 			</div>
 
-            <div    id="stella"
-                    data-3300="transform: translateX(-5vw) rotate(0deg); opacity: .8;"
-                    data-3800="transform: translateX(40vw) rotate(-15deg); opacity: 1;"
-                    data-4000="transform: translateX(40vw) rotate(-25deg);"    
-                    data-7800="transform: translateX(40vw) rotate(0deg)"	
+      <div  id="stella"
+            data-3300="transform: translateX(-5vw) rotate(0deg); opacity: .8;"
+            data-3800="transform: translateX(40vw) rotate(-15deg); opacity: 1;"
+            data-4000="transform: translateX(40vw) rotate(-25deg);"    
+            data-7800="transform: translateX(40vw) rotate(0deg)"	
 
-                    data-10500="transform: translateX(45vw) rotate(0deg)">	
-                    <!-- data-4800="transform:translateX(16vw);"
-                    data-22000="transform: translateX(16vw);"
-                    data-30000="transform: translateX(20vw);"
-                    data-end="transform: translateX(20vw);"
-				    data-10000="transform:translateX(120vw); display:block" -->
+              data-10500="transform: translateX(45vw) rotate(0deg)">	
+              <!-- data-4800="transform:translateX(16vw);"
+              data-22000="transform: translateX(16vw);"
+              data-30000="transform: translateX(20vw);"
+              data-end="transform: translateX(20vw);"
+      data-10000="transform:translateX(120vw); display:block" -->
 			</div>
             
-              <div 	id="flascheOben"
-                    data-3300="transform: translateX(-45vw); display:block; opacity: .7;"
-                    data-4000="transform: translateX(10vw); opacity: 1;"
-                    data-4800="transform: translateX(10vw);"
+      <div 	id="flascheOben"
+            data-3300="transform: translateX(-45vw); display:block; opacity: .7;"
+            data-4000="transform: translateX(10vw); opacity: 1;"
+            data-4800="transform: translateX(10vw);"
 
-                    data-22000="transform: translateX(16vw);"
-                    data-30000="transform: translateX(20vw);">			
-                    </div>
+            data-22000="transform: translateX(16vw);"
+            data-30000="transform: translateX(20vw);">			
+      </div>
             
            <!--Szene 0: Stella trifft auf Flaschenpost -->
 
@@ -181,7 +146,6 @@
             data-8000="display: none;">
 
         <div id="stella_gedanke_blaze">
-
           <p  data-3500="display: none;"
               data-3800="display: block; opacity: .3;"
               data-3900="opacity: 1;"
@@ -381,7 +345,15 @@
                     data-34000="opacity: 1;"
                     data-34200="opacity: .3;"
                     data-34400="display: none;">
-                    Immer wieder verfangen sich Schildkröten, Robben, Delfine und viele weitere Tiere in Müll. Besonders oft geraten sie dabei an Plastikringe, Tüten und Fischernetze. Dieser Abfall schnürt den Meeresbewohnern ihre Körperteile ab, sodass sie bei der Nahrungssuche stark beeinträchtigt werden und sogar daran verenden. Gerade das harte Plastik der Plastikringe führt zu Schnittwunden, welche sich entzünden und ebenfalls zum Tod führen können. Besonders bei Schildkröten, die wegen ihres Panzers vor Schnittwunden bewahrt werden, kommt es zu Verformungen des Panzers sowie ihrer Organe. Ein weiteres Problem stellen wasserundurchlässige Plastiktüten, Planen o.ä. dar. Diese können die Lebewesen an der Atmung hindern und zu Erstickung führen.  
+                    Immer wieder verfangen sich Schildkröten, Robben, Delfine und viele weitere Tiere in Müll. 
+                    Besonders oft geraten sie dabei an Plastikringe, Tüten und Fischernetze. 
+                    Dieser Abfall schnürt den Meeresbewohnern ihre Körperteile ab, sodass sie bei der Nahrungssuche 
+                    stark beeinträchtigt werden und sogar daran verenden. Gerade das harte Plastik der Plastikringe 
+                    führt zu Schnittwunden, welche sich entzünden und ebenfalls zum Tod führen können. 
+                    Besonders bei Schildkröten, die wegen ihres Panzers vor Schnittwunden bewahrt werden, 
+                    kommt es zu Verformungen des Panzers sowie ihrer Organe. Ein weiteres Problem stellen 
+                    wasserundurchlässige Plastiktüten, Planen o.ä. dar. Diese können die Lebewesen an der 
+                    Atmung hindern und zu Erstickung führen.  
                  </p> 
             </div>
         </div>
@@ -557,7 +529,15 @@
                 data-61400="opacity: 1;"
                 data-61600="opacity: .3;"
                 data-61800="display: none;">
-                Immer wieder verfangen sich Schildkröten, Robben, Delfine und viele weitere Tiere in Müll. Besonders oft geraten sie dabei an Plastikringe, Tüten und Fischernetze. Dieser Abfall schnürt den Meeresbewohnern ihre Körperteile ab, sodass sie bei der Nahrungssuche stark beeinträchtigt werden und sogar daran verenden. Gerade das harte Plastik der Plastikringe führt zu Schnittwunden, welche sich entzünden und ebenfalls zum Tod führen können. Besonders bei Schildkröten, die wegen ihres Panzers vor Schnittwunden bewahrt werden, kommt es zu Verformungen des Panzers sowie ihrer Organe. Ein weiteres Problem stellen wasserundurchlässige Plastiktüten, Planen o.ä. dar. Diese können die Lebewesen an der Atmung hindern und zu Erstickung führen.  
+                Immer wieder verfangen sich Schildkröten, Robben, Delfine und viele weitere Tiere in Müll. 
+                Besonders oft geraten sie dabei an Plastikringe, Tüten und Fischernetze. 
+                Dieser Abfall schnürt den Meeresbewohnern ihre Körperteile ab, sodass sie bei der Nahrungssuche 
+                stark beeinträchtigt werden und sogar daran verenden. Gerade das harte Plastik der Plastikringe 
+                führt zu Schnittwunden, welche sich entzünden und ebenfalls zum Tod führen können. 
+                Besonders bei Schildkröten, die wegen ihres Panzers vor Schnittwunden bewahrt werden, 
+                kommt es zu Verformungen des Panzers sowie ihrer Organe. Ein weiteres Problem stellen 
+                wasserundurchlässige Plastiktüten, Planen o.ä. dar. Diese können die Lebewesen an der 
+                Atmung hindern und zu Erstickung führen.  
              </p>           
         </div>
       
@@ -565,10 +545,7 @@
 			
     </div> <!-- end #story_container -->
 
-	</main>
-
-  <script type="text/javascript" src="js/main.js"></script> 
-  <script type="text/javascript" src="js/skrollr.min.js"></script>
+	</main> 
 
 </body>
 </html>
