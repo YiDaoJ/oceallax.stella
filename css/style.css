@@ -118,13 +118,12 @@ body {
 #boden {
 	position: absolute;
 	bottom: 0px;
-	width: 800vw;
+	width: 1200vw;
 	height: 20%;
 	background: url('../img/Boden.png');
 	background-repeat: repeat-x;	
 	background-size: 3500px 100%;
-	z-index: 10;
-	
+	z-index: 10;	
 }
 
 #berg2 {
@@ -188,44 +187,58 @@ body {
 	
 }
 
-#stella_gedanken #stella_gedanke_blaze p:first-child {
-	padding-top: 3%;
-	font-size: 1.6em;
+#stella_gedanken #stella_gedanke_blaze p {
 	font-weight: bold;
 	text-align: justify-all;
 	transform: rotate(-10deg);
 	-webkit-transform: rotate(-10deg);
 }
 
-#stella_gedanken #stella_gedanke_blaze p:last-child {
+#stella_gedanken #stella_gedanke_blaze p:first-child {
+	padding-top: 3%;
+	font-size: 1.6em;	
+}
+
+#stella_gedanken #stella_gedanke_blaze p:nth-child(2) {
 	font-size: 1.5em;
-	font-weight: bold;	
-	text-align: justify-all;
-	transform: rotate(-10deg);
-	-webkit-transform: rotate(-10deg);
+}
+
+
+#stella_gedanken #stella_gedanke_blaze p:nth-child(3) {
+  margin-top: -10px;
+  font-size: 1.8em;
+}
+
+#stella_gedanken #stella_gedanke_blaze p:nth-child(4) {    
+  font-size: 1.6em;	
+}
+
+#stella_gedanken #stella_gedanke_blaze p:last-child {
+  padding-top: 10%;
+  font-size: 2em;
 }
 
 #schildkroete{
-    position: absolute;
+  position: absolute;
 	bottom: 23%;
-    left: 13%;
-    width: 4%;
-    height: 28%;
+  left: 13%;
+  width: 4%;
+  height: 28%;
 	background: url(../img/Schildkroete.png);
-    background-size: 100% 100%;
-    z-index: 18;
+  background-size: 100% 100%;
+  z-index: 18;
 }
 
 
 #sprechblase_Stella_Schildkroete {
-    position:absolute;
-    bottom: 45%;
-    left: 8.5%;
-    width: 4.7%;
-    height: 27%;
-    background: url(../img/Sprechblase2.png) no-repeat;
-    background-size: 100% 100%;
-    z-index:20;
+  position:absolute;
+  bottom: 45%;
+  left: 8.5%;
+  width: 4.7%;
+  height: 27%;
+  background: url(../img/Sprechblase2.png) no-repeat;
+  background-size: 100% 100%;
+  z-index:20;
 	transform: rotate(-5deg);
     /*text-align: center;*/
 }
@@ -233,17 +246,17 @@ body {
 .text_Stella_Schildkroete {
 	position:relative;  
 	margin: 9% 8%; 
-    width: 85%; 
-    height: 65%;
-    text-align: center;
+  width: 85%; 
+  height: 65%;
+  text-align: center;
 }
 
 #sprechblase_Stella_Schildkroete p {
 	position:relative;
 	font-weight: bold;
-    text-align: justify-all;
+  text-align: justify-all;
 	transform: rotate(5deg);
-    z-index: 20;
+  z-index: 20;
 }
 
 
@@ -330,7 +343,7 @@ body {
     position:absolute;     
     width: 100vw;
     height: 100vh;
-    z-index:20;
+    z-index:22;
 }
 
 #seifenblase_container {
@@ -339,11 +352,10 @@ body {
     width: 55vw;
     height: 95vh;
     background: url(../img/Seifenblase.png) no-repeat;
-    background-size: 100% 100%;
-    
+    background-size: 100% 100%;    
 }
 
-#seifenblase_container p {
+#infotext1 #seifenblase_container p:first-child {
     position: absolute;
     top: 12vh;
     left: 10vw;
@@ -351,6 +363,17 @@ body {
     height: 80vh;
     text-align: center;
     font-size: 1.5em;
+    line-height: 32px;
+}
+
+#infotext1 #seifenblase_container p:nth-child(2) {
+    position: absolute;
+    top: 12vh;
+    left: 10vw;
+    width: 35vw;
+    height: 80vh;
+    text-align: center;
+    font-size: 1.2em;
     line-height: 32px;
 }
 
@@ -378,4 +401,15 @@ body {
 	transform: rotate(-5deg);
     /*text-align: center;*/
 	background-color: deeppink;
+}
+
+#plastik_insel {
+	position:absolute;
+  bottom: 65%;
+  left: 8.5%;
+  width: 20%;
+  height: 35%;
+  background: url(../img/insel.png) no-repeat;
+  background-size: 100% 100%;
+  z-index:20;
 }
