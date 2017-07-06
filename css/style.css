@@ -353,28 +353,164 @@ body {
     line-height: 32px;
 }
 
-#koralle{
+#fische {
     position: absolute;
-	bottom: 3%;
+	bottom: 23%;
     left: 13%;
-    width: 5%;
-    height: 35%;
-	background: url(../img/Koralle.png);
-/*	background-color: orange;*/
+    width: 4%;
+    height: 28%;
+	background: url(../img/Fisch2.png);
     background-size: 100% 100%;
     z-index: 18;
 }
 
-#sprechblase_Stella_Koralle {
+#sprechblase_fische {
     position:absolute;
     bottom: 45%;
-    left: 8.5%;
+    left: 13.5%;
     width: 4.7%;
     height: 27%;
     background: url(../img/Sprechblase2.png) no-repeat;
     background-size: 100% 100%;
     z-index:20;
 	transform: rotate(-5deg);
+}
+
+#sprechblase_Stella_Fische {
+    position:absolute;
+    bottom: 35%;
+    left: 3%;
+    width: 4.7%;
+    height: 27%;
+    background: url(../img/Sprechblase.png) no-repeat;
+    background-size: 100% 100%;
+    z-index:20;
+	transform: rotate(-5deg);
     /*text-align: center;*/
-	background-color: deeppink;
+}
+
+.text_Stella_Fische {
+	position:relative;  
+	margin: 9% 8%; 
+    width: 85%; 
+    height: 65%;
+    text-align: center;
+}
+
+#sprechblase_Stella_Fische p {
+	position:relative;
+	font-weight: bold;
+    text-align: justify-all;
+	transform: rotate(5deg);
+    z-index: 20;
+}
+
+
+#sprechblase_Stella_Fische .text_Stella_Fische p:first-child {
+    padding-top: 14%;
+    font-size: 1.8em;
+    /*background-color: yellow;*/
+}
+
+#sprechblase_Stella_Fische .text_Stella_Fische p:nth-child(2) {
+    padding-top: 12%;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+}
+
+#sprechblase_Stella_Fische .text_Stella_Fische p:nth-child(3) {
+    margin-top: 22%;
+    font-size: 1.8em;  
+}
+
+#sprechblase_Stella_Fische .text_Stella_Fische p:last-child {
+    padding-top: 7%;
+    font-size: 1.4em; 
+
+}
+
+.text_fische {
+    width: 85%;
+    padding-left: 8%;
+}
+
+#sprechblase_fische .text_fische p {
+    transform: rotate(5deg);
+}
+
+#sprechblase_fische .text_fische p:first-child {
+	padding-top: 7%;
+	font-size: 1.8em;
+    text-align: center;
+}
+
+#sprechblase_fische .text_fische p:nth-child(2) {
+	padding-top: 9%;
+	font-size: 1.7em;
+    text-align: center;
+}
+
+#sprechblase_fische .text_fische p:nth-child(3) {
+	padding-top: 5%;
+	font-size: 1.3em;
+    text-align: center;
+}
+
+#sprechblase_fische .text_fische p:nth-child(4) {
+	padding-top: 6%;
+	font-size: 1.5em;
+    text-align: center;
+}
+
+#sprechblase_fische .text_fische p:nth-child(5) {
+	padding-top: 8.5%;
+	font-size: 1.6em;
+    text-align: center;
+}
+#sprechblase_fische .text_fische p:nth-child(6) {
+	padding-top: 7%;
+	font-size: 1.1em;
+    text-align: center;
+}
+
+#sprechblase_fische .text_fische p:nth-child(7) {
+	padding-top: 10%;
+	font-size: 1.6em;
+    text-align: center;
+}
+
+#sprechblase_fische .text_fische p:nth-child(8) {
+	padding-top: 6%;
+	font-size: 1.5em;
+    text-align: center;
+}
+
+#sprechblase_fische .text_fische p:nth-child(9) {
+	padding-top: 10%;
+	font-size: 1.6em;
+    text-align: center;
+}
+
+#sprechblase_fische .text_fische p:last-child {
+	padding-top: 6%;
+	font-size: 1.7em;
+    text-align: center;
+}
+
+#infotext2 {
+    position:absolute;     
+    width: 100vw;
+    height: 100vh;
+    z-index:20;
+}
+
+#infotext2 #seifenblase_container p {
+    position: absolute;
+    top: 9vh;
+    left: 10vw;
+    width: 35vw;
+    height: 80vh;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 32px;
 }
