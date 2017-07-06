@@ -378,3 +378,146 @@ body {
     /*text-align: center;*/
 	background-color: deeppink;
 }
+
+#koralle{
+    position: absolute;
+	bottom: 3%;
+    left: 13%;
+    width: 5%;
+    height: 35%;
+	background: url(../img/Koralle.png);
+/*	background-color: orange;*/
+    background-size: 100% 100%;
+    z-index: 18;
+}
+
+#sprechblase_Stella_Koralle {
+    position:absolute;
+    bottom: 45%;
+    left: 8.5%;
+    width: 4.7%;
+    height: 27%;
+    background: url(../img/Sprechblase2.png) no-repeat;
+    background-size: 100% 100%;
+    z-index:20;
+	transform: rotate(-5deg);
+    /*text-align: center;*/
+	/*background-color: deeppink;*/^
+}
+
+.text_Stella_Koralle {
+	position:relative;  
+	margin: 9% 8%; 
+    width: 85%; 
+    height: 65%;
+    text-align: center;
+}
+
+#sprechblase_Stella_Koralle p {
+	position:relative;
+	font-weight: bold;
+    text-align: justify-all;
+	transform: rotate(5deg);
+    z-index: 20;
+}
+
+#sprechblase_Stella_Koralle .text_Stella_Koralle p:first-child {
+    padding-top: 10%;
+    font-size: 1.7em;
+    /*background-color: yellow;*/
+}
+
+#sprechblase_Stella_Koralle .text_Stella_Koralle p:nth-child(2) {
+    padding-top: 17%;
+    font-size: 1.9em;
+    letter-spacing: 1px;
+}
+
+#sprechblase_Stella_Koralle .text_Stella_Koralle p:nth-child(3) {
+    margin-top: 21%;
+    font-size: 1.7em;  
+}
+
+#sprechblase_Stella_Koralle .text_Stella_Koralle p:nth-child(4) {
+    margin-top: 19%;
+    font-size: 1.8em;  
+}
+
+#sprechblase_Koralle {
+    position:absolute;    
+    left: 8.5%;
+    bottom: 43%;
+    width: 5%;
+    height: 32%;
+    background: url(../img/Sprechblase.png) no-repeat;
+    background-size: 100% 100%;
+    z-index:20;
+}
+
+.text_Koralle {
+    position:relative;  
+	margin: 9% 10%; 
+    width: 80%; 
+    height: 74%;
+    text-align: center;
+}
+
+#sprechblase_Koralle p {
+	position: relative;
+	font-weight: bold;
+    text-align: justify-all;
+    z-index: 20;
+}
+
+#sprechblase_Koralle .text_Koralle p:first-child {
+	padding-top: 11%;
+	font-size: 1.4em;
+}
+
+#sprechblase_Koralle .text_Koralle p:nth-child(2) {
+	padding-top: 8%;
+	font-size: 1.5em;
+}
+
+#sprechblase_Koralle .text_Koralle p:nth-child(3) {
+	padding-top: 12%;
+	font-size: 1.5em;
+}
+
+#sprechblase_Koralle .text_Koralle p:nth-child(4) {
+	padding-top: 6%;
+	font-size: 1.5em;
+}
+
+#sprechblase_Koralle .text_Koralle p:nth-child(5) {
+	padding-top: 25%;
+	font-size: 1.7em;
+}
+
+#seifenblase_container2 {
+    position: relative;
+    margin: 20px auto;
+    width: 55vw;
+    height: 95vh;
+    background: url(../img/Seifenblase.png) no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+#seifenblase_container2 p {
+    position: absolute;
+    top: 12vh;
+    left: 10vw;
+    width: 35vw;
+    height: 80vh;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 32px;
+}
+
+#infotext2 {
+    position:absolute;     
+    width: 100vw;
+    height: 100vh;
+    z-index:20;
+}
