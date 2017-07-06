@@ -342,8 +342,19 @@ body {
     
 }
 
-#seifenblase_container p {
+#seifenblase_container p:first-child {
     position: absolute;
+    top: 12vh;
+    left: 10vw;
+    width: 35vw;
+    height: 80vh;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 32px;
+}
+
+#seifenblase_container p:nth-child(2) {
+	position: absolute;
     top: 12vh;
     left: 10vw;
     width: 35vw;
@@ -356,7 +367,7 @@ body {
 #seestern{
     position: absolute;
 	bottom: 160px;
-    left: 1700px;
+    left: 15%;
     width: 180px;
     height: 120px;
 	background: url(../img/Seestern_liegt.png);
