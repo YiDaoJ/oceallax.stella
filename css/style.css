@@ -345,21 +345,21 @@ body {
 
 #seestern{
     position: absolute;
-	bottom: 160px;
-    left: 15%;
-    width: 180px;
-    height: 120px;
-	background: url(../img/Seestern_liegt.png);
+	bottom: 2%;
+    left: 17%;
+    width: 8%;
+    height: 65%;
+	background: url(../img/SeesternamBildschirm.png);
     background-size: 100% 100%;
     z-index: 18;
 }
 
 #sprechblase_Stella_Seestern {
     position:absolute;
-    bottom: 320px;
-    left: 510px;
-    width: 350px;
-    height: 210px;
+    bottom: 21vw;
+    left: 38vw;
+    width: 4.6%;
+    height: 28%;
     background: url(../img/Sprechblase2.png) no-repeat;
     background-size: 100% 100%;
     z-index:20;
@@ -419,10 +419,10 @@ body {
 
 #sprechblase_Seestern {
     position:absolute;    
-    left: 460px;
-    bottom: 330px;
-    width: 360px;
-    height: 240px;
+    left: 43vw;
+    bottom: 23vw;
+    width: 5%;
+    height: 33%;
     background: url(../img/Sprechblase.png) no-repeat;
     background-size: 100% 100%;
     z-index:20;
@@ -454,19 +454,15 @@ body {
 }
 
 #sprechblase_Seestern .text_Seestern p:nth-child(3) {
-	padding-top: 5px;
+	padding-top: 4%;
 	font-size: 1.2em;
 }
 
 #sprechblase_Seestern .text_Seestern p:nth-child(4) {
-	padding-top: 5px;
+	padding-top: 6%;
 	font-size: 1.5em;
 }
 
-#sprechblase_Seestern .text_Seestern p:nth-child(5) {
-	padding-top: 18px;
-	font-size: 1.6em;
-}
 
 
 /* koralle */
