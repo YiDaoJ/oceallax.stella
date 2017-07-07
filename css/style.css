@@ -351,7 +351,7 @@ body {
     height: 65%;
 	background: url(../img/SeesternamBildschirm.png);
     background-size: 100% 100%;
-    z-index: 18;
+    z-index: 20;
 }
 
 #sprechblase_Stella_Seestern {
@@ -469,12 +469,11 @@ body {
 
 #koralle{
     position: absolute;
-	bottom: 3%;
+	bottom: 2%;
     left: 13%;
     width: 5%;
     height: 35%;
 	background: url(../img/Koralle.png);
-/*	background-color: orange;*/
     background-size: 100% 100%;
     z-index: 18;
 }
