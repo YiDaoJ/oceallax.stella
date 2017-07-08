@@ -2,6 +2,10 @@
 $(document).ready(function(){
 	var s = skrollr.init();	
   var scroll = window.pageYOffset;
+
+  window.onscroll = doThisStuffOnScroll;
+
+
 });
 
 // function playSound() {
@@ -10,6 +14,10 @@ $(document).ready(function(){
 //     $('#bubble_sound').play();
 //   }
 // }
+
+  function doThisStuffOnScroll() {
+      console.log(window.pageYOffset);
+  }
 
 function loadingCheck() {
   if (document.readyState != "complete") {
