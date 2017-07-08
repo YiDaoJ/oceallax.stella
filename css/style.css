@@ -447,8 +447,9 @@ body {
 }
 
 #sprechblase_Seestern .text_Seestern p:nth-child(4) {
-	padding-top: 6%;
-	font-size: 1.5em;
+	padding-top: 10px;
+  padding-left: 10px;
+	font-size: 1.7em;
 }
 
 
@@ -598,62 +599,58 @@ body {
 
 /* fische */
 #fische {
-    position: absolute;
+  position: absolute;
 	bottom: 23%;
-    left: 13%;
-    width: 4%;
-    height: 28%;
+  left: 12%;
+  width: 4%;
+  height: 28%;
 	background: url(../img/Fisch2.png);
-    background-size: 100% 100%;
-    z-index: 18;
+  background-size: 100% 100%;
+  z-index: 18;
 }
 
 #sprechblase_fische {
-    position:absolute;
-    bottom: 45%;
-    left: 13.5%;
-    width: 4.7%;
-    height: 27%;
-    background: url(../img/Sprechblase2.png) no-repeat;
-    background-size: 100% 100%;
-    z-index:20;
-	transform: rotate(-5deg);
+  position:absolute;
+  bottom: 45%;
+  left: 13%;
+  width: 4.7%;
+  height: 27%;
+  background: url(../img/Sprechblase2.png) no-repeat;
+  background-size: 100% 100%;
+  z-index:20;
 }
 
 #sprechblase_Stella_Fische {
-    position:absolute;
-    bottom: 35%;
-    left: 3%;
-    width: 4.7%;
-    height: 27%;
-    background: url(../img/Sprechblase.png) no-repeat;
-    background-size: 100% 100%;
-    z-index:20;
-	transform: rotate(-5deg);
-    /*text-align: center;*/
+  position: absolute;
+  bottom: 40%;
+  left: 3%;
+  width: 4.7%;
+  height: 27%;
+  background: url(../img/Sprechblase.png) no-repeat;
+  background-size: 100% 100%;
+  z-index:20;
 }
 
 .text_Stella_Fische {
 	position:relative;  
 	margin: 9% 8%; 
-    width: 85%; 
-    height: 65%;
-    text-align: center;
+  width: 85%; 
+  height: 65%;
+  font-weight: bold;
+  text-align: center;
 }
 
 #sprechblase_Stella_Fische p {
 	position:relative;
 	font-weight: bold;
-    text-align: justify-all;
-	transform: rotate(5deg);
-    z-index: 20;
+  text-align: justify-all;
+  z-index: 20;
 }
 
 
 #sprechblase_Stella_Fische .text_Stella_Fische p:first-child {
     padding-top: 14%;
     font-size: 1.8em;
-    /*background-color: yellow;*/
 }
 
 #sprechblase_Stella_Fische .text_Stella_Fische p:nth-child(2) {
@@ -674,12 +671,13 @@ body {
 }
 
 .text_fische {
-    width: 85%;
-    padding-left: 8%;
+  font-weight: bold;
+  width: 85%;
+  padding-left: 8%;
 }
 
 #sprechblase_fische .text_fische p {
-    transform: rotate(5deg);
+    /*transform: rotate(5deg);*/
 }
 
 #sprechblase_fische .text_fische p:first-child {
