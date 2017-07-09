@@ -84,41 +84,36 @@ body {
 	background-size: 100%;
 }
 
-#intro_man1 {
-	position: absolute;
-  bottom: 8%;
+#intro_man1,
+#intro_man2,
+#intro_man3 {
+  position: absolute;
+  top: 10%;
 	left: 20%;
-	width: 300px;
-	height: 500px;
+	width: 345px;
+	height: 695px;  
+}
+
+#intro_man1 {
 	background: url('../img/man1.png') no-repeat;
-	background-size: contain;
+  background-size: 90% 90%;
 }
 
 #intro_man2 {
-	position: absolute;
-  bottom: 8%;
-	left:20%;
-	width: 305px;
-	height: 540px;
 	background: url('../img/man2.png') no-repeat;
-	background-size: contain;
+  background-size: 90% 90%;
+	
 }
 
 #intro_man3 {
-	position: absolute;
-	bottom: 8%;
-	left: 20%;
-	width: 300px;
-	height: 500px;
 	background: url('../img/man3.png') no-repeat;
-	background-size: contain;
+  background-size: 90% 90%;
 }
 
 #flasche_pos1,
 #flasche_pos2 {
 	position: absolute;
-	top: 45%;
-	left: 45%;
+	left: 50%;
 	width: 100px;
 	height: 100px;
 	background: url('../img/flasche.png') no-repeat;
@@ -126,15 +121,18 @@ body {
 	transform: rotate(40deg);
 }
 
+#flasche_pos1 {
+  top: 45%;
+}
+
 #flasche_pos2 {
-  top: 48%;
+  top: 49%;
 }
 
 /* Szene - Story beginnen */
 
 #story_container {
-	/*position: absolute;*/
-	display: none;
+	display: none;  
 	width: 500vw;
 	height: 100vh;
 	background: url('../img/Himmel.jpg') no-repeat;
@@ -176,6 +174,19 @@ body {
 	opacity: .4;
 }
 
+#fischschwarm {
+  position: absolute;
+  /*display: none;*/
+  bottom: 23%;
+  left: 20%;
+  width: 1087px;
+	height: 486px;	
+	background: url('../img/fishes2.png') no-repeat;
+	background-size: 80% 80%;
+  background-color: red;
+	z-index:7;
+}
+
 #stella {
 	display: block;
 	position: absolute;
@@ -191,13 +202,11 @@ body {
 #flascheOben {
   position:absolute;
   left: 10%;
-  bottom: 70%;
+  bottom: 68%;
   width: 1.2%;
   height: 24%;
   background: url('../img/flasche.png') no-repeat;
   background-size: 70% 100%; 
-  transform: rotate(-10deg);
-  -webkit-transform: rotate(-10deg);
 }
 
 #stella_gedanken {
