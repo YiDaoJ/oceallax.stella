@@ -1,23 +1,18 @@
-
 $(document).ready(function(){
 	var s = skrollr.init();	
-  var scroll = window.pageYOffset;
+  var bubbleAudio = $('#bubble_sound').get(0);
+  window.onscroll = playAudio;
 
-  window.onscroll = doThisStuffOnScroll;
-
-
+  
+  function playAudio() {
+    console.log(window.pageYOffset);
+    if(window.pageYOffset > 31000 && window.pageYOffset < 34500) {
+      // console.log("test");
+      bubbleAudio.play();
+    }
+  }  
 });
 
-// function playSound() {
-//   if(scroll > 31000 && scroll < 34500) {
-//     console.log("test");
-//     $('#bubble_sound').play();
-//   }
-// }
-
-  function doThisStuffOnScroll() {
-      console.log(window.pageYOffset);
-  }
 
 function loadingCheck() {
   if (document.readyState != "complete") {
