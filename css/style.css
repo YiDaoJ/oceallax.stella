@@ -863,16 +863,16 @@ body {
 
 #seifenblase_container p {
   position: absolute;
-  top: 16vh;
+  top: 17vh;
   left: 11vw;
   width: 36vw;
-  height: 80vh;
+  height: 83vh;
   text-align: center;
   font-weight: normal;
 }
 
 #seifenblase_container p:first-child {   
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-height: 34px;
 }
 
@@ -882,17 +882,17 @@ body {
 }
 
 #seifenblase_container p:nth-child(3) {
-  font-size: 1.3em;
+  font-size: 1.25em;
   line-height: 30px;
 }
 
 #seifenblase_container p:nth-child(4) {
-  font-size: 1.1em;
-  line-height: 29px;
+    font-size: 1em;
+    line-height: 29px;
 }
 
 #seifenblase_container p:last-child {
-  font-size: 1.2em;
+  font-size: 1.15em;
   line-height: 31px;
 }
 
@@ -920,8 +920,9 @@ body {
     position: relative;
     font-style: italic;
     font-size: 52px;
-    color: saddlebrown;
+    color: #996633;
     text-align: center;
+    text-shadow: 2px 2px #d2a679;
     margin: auto;
     margin-top: 5%;
     width: 100%;
@@ -935,8 +936,9 @@ body {
     font-style: italic;
     font-weight: normal;
     font-size: 45px;
-    color: saddlebrown;
+    color: #996633;
     text-align: center;
+    text-shadow: 2px 2px #d2a679;
     width: 100%;
     padding: 0;
     margin-top: 3%;
