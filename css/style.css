@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	font-family: 'Pangolin', cursive;
+  font-weight: bold;
 }
 
 /* ===== Loading Szene ===== */
@@ -870,7 +871,7 @@ body {
 }
 
 #seifenblase_container p:last-child {
-	position: absolute;
+  position: absolute;
   top: 12vh;
   left: 10vw;
   width: 35vw;
@@ -878,4 +879,88 @@ body {
   text-align: center;
   font-size: 1.2em;
   line-height: 31px;
+}
+
+/* end seite */
+#ende {
+  display: none;
+  background: url(../img/Schatzkarte1.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#ende h1 {
+    font-style: italic;
+    font-size: 45px;
+    color: saddlebrown;
+    text-align: center;
+    margin: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15%;
+    opacity: .8;
+}
+
+#ende h2 {
+    position: relative;
+    font-style: italic;
+    font-size: 52px;
+    color: saddlebrown;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    width: 100%;
+    opacity: .8;
+    
+}
+
+#namen {
+    position: relative;
+    list-style: none;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 45px;
+    color: saddlebrown;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 3%;
+    line-height: 120%;
+    opacity: .8;
+}
+
+#links {
+    position: relative;
+    margin-left: 34.5%;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    margin-top: 3%;
+}
+
+#links li {
+    float: left;
+    margin-left: 7%;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#links a {
+    color: saddlebrown;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#wwf {
+    width: 49px;
+    margin-left: 20%;
+    margin-top: 5%  
+}
+
+#plasticocean {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
 }

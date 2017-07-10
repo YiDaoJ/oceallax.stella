@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>	
 	<script type="text/javascript" src="js/main.js"></script> 
   <script type="text/javascript" src="js/skrollr.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">  
 </head>
 
 <body onload="loadingCheck()">
@@ -31,9 +31,9 @@
 
 	<main>
 		<!-- Intro -->
-		<div 	id="intro" class="viewport" 
-					data-1="display: block;" 
-					data-3300="display:none;">
+		<div  id="intro" class="viewport" 
+          data-1="display: block;" 
+          data-3300="display:none;">
 
 			<div  id="intro_man1"
 						data-0="display: block;"	
@@ -45,7 +45,7 @@
 			<div  id="intro_man2"
 						data-0="display: block;"
 						data-500="opacity: 0;"
-						data-1100="opacity: 1;"
+						data-1000="opacity: 1;"
 						data-1600="opacity: 0;"
             data-1650="display: none;">				
 			</div>
@@ -53,7 +53,7 @@
 			<div 	id="intro_man3"
 						data-0="display: block;"
 						data-1000="opacity: 0;"
-						data-2000="opacity: 1;"
+						data-1600="opacity: 1;"
 						data-3300="display:none;">				
 			</div>
 
@@ -81,7 +81,8 @@
 		<div 	id="story_container" class="viewport" 
 					data-0="display: none;"
 					data-2800="display: block; margin-top: 100vh;"
-          data-3300="margin-top: 0;">
+          data-3300="margin-top: 0;"
+          data-169000="display:none;">
 
 			<div 	id="meer"
             data-3300="transform:translateX(0vw); display:block"
@@ -106,7 +107,7 @@
 						data-110500="transfrom: translateX(-300vw);"
 						data-130500="transfrom: translateX(-300vw);"
 
-						data-200000="transform:translateX(-600vw);">
+						data-168000="transform:translateX(-600vw);">
 			</div>
 
 			<div 	id="boden"
@@ -127,7 +128,7 @@
 						data-110500="transfrom: translateX(-660vw);"
 						data-130500="transfrom: translateX(-660vw);"
 
-						data-200000="transform:translateX(-860vw);"> 		
+						data-168000="transform:translateX(-860vw);"> 		
 			</div>
 
       
@@ -1061,6 +1062,41 @@
       </div>
 			
     </div> <!-- end #story_container -->
+
+    <div id="ende" class="viewport"
+					data-168000="display: block; margin-top: 100vh;"
+          data-169000=" margin-top: 0;">
+
+      <!--<div id="zitat" 
+            data-0="display:none;"
+            data-end="display:none;">          
+          <h1>"Unser Planet ist unser Zuhause, unser einziges Zuhause. Wo sollen wir denn hingehen, wenn wir ihn zerstören?"<br>-Dalai Lama</h1>
+      </div>-->
+      
+      <div id="footer">
+        <h2 data-169000="margin-top: 50%; opacity: .3;"
+            data-170000="margin-top: 5%; opacity: 1; ">
+          Oceallax - Umweltschutz mit Stella
+        </h2>
+
+        <ul id="namen" 
+            data-169000="opacity: .3;"
+            data-170000="opacity: .8; ">
+            <li>Alina Mitaper</li>
+            <li>Chuxiao Jiang</li>
+            <li>Julia Selzer</li>
+            <li>Mathuri Senthilnathan</li>
+            <li>Vanessa Abraham</li>
+            <li>Veronika Nikitina</li>
+        </ul>
+
+        <ul id="links">
+            <li><a href="http://www.wwf.de/themen-projekte/meere-kuesten/unsere-ozeane-versinken-im-plastikmuell/" target="_blank"><img id="wwf" src="img/WWF.png"></a></li>
+            <li><a href="https://www.plasticoceans.org/film/" target="_blank"><img id="plasticocean" src="img/PlasticOcean.png"></a></li>
+        </ul>
+      </div>
+
+    </div>
 
 	</main>
 </body>
