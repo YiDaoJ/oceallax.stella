@@ -17,13 +17,12 @@ body {
 }
 
 #loading_animation{
-    position: relative;
-    margin: auto;	
-    margin-top: 10vh;
-    width: 40vw;
-    height: 60vh;	
-    background: url('../img/Schatzkarte.gif') no-repeat center;
-    background-size: 40vw;
+    background: url(Oceallax_v2.gif);
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* #bubble_loading {
