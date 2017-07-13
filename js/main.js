@@ -16,11 +16,11 @@ $(document).ready(function(){
 
 function loadingCheck() {
   if (document.readyState != "complete") {
-    showIntro();
-    window.setTimeout(loadingCheck, 10000);    
+    // showIntro();
+    // window.setTimeout(loadingCheck, 10000);    
   }
   else {
-    document.getElementById('loading').id = 'loaded';
+    // document.getElementById('loading').id = 'loaded';
   }
 }
 
