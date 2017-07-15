@@ -109,16 +109,16 @@ body {
 	background-size: 500vw 90vh;
 	z-index: 4;
     opacity: .8;
-    animation: floating_meer 8s ease infinite;
+    /* animation: floating_meer 8s ease infinite;
     -webkit-animation: floating_meer 8s ease infinite;
-    -moz-animation: floating_meer 8s ease infinite;
+    -moz-animation: floating_meer 8s ease infinite; */
 }
 
-@keyframes floating_meer {
+/* @keyframes floating_meer {
   0%    {height: 92vh;} 
   50%   {height: 90vh;}
   100%  {height: 92vh;}
-}
+} */
 
 #boden {
 	position: absolute;
@@ -143,7 +143,7 @@ body {
     z-index: 6;
 }
 
-#fischschwarm {
+ #fischschwarm {
     position: relative;
     margin-top: 50vh;
     margin-left: 90vw;
@@ -152,37 +152,38 @@ body {
 	background: url('../img/fishes2.png') no-repeat center;
 	background-size: contain;
 	z-index: 5;
-    animation: floating_fishschwarm 7s ease infinite;
-    -webkit-animation: floating_fishschwarm 7s ease infinite;
-}
+     animation: floating_fishschwarm 7s ease infinite;
+    -webkit-animation: floating_fishschwarm 7s ease infinite; 
+} 
 
-@keyframes floating_fishschwarm {
+ @keyframes floating_fishschwarm {
     0%    {margin-top: 40vh;} 
     50%   {margin-top: 36vh;}
     100%  {margin-top: 40vh;}
-}
+} 
 
 
 #stella {
 	display: block;
 	position: absolute;
     left: -8vw;
+    bottom: 23vh;
     margin-bottom: 3vh;
 	width: 11vw;
 	height: 7vw;	
 	background: url('../img/Stella.png') no-repeat;
 	background-size: contain;
 	z-index:20;
-    animation: floating_tiere 5s linear infinite;
+     /* animation: floating_tiere 5s linear infinite;
     -webkit-animation: floating_tiere 5s linear infinite;
-    -moz-animation: floating_tiere 5s linear infinite;
+    -moz-animation: floating_tiere 5s linear infinite;  */
 }
 
-@keyframes floating_tiere {
+ /* @keyframes floating_tiere {
     0%    {bottom: 25vh}
     50%   {bottom: 23vh}
     100%  {bottom: 25vh}
-}
+}  */
 
 #flascheOben {
     position:absolute;
@@ -249,14 +250,15 @@ body {
 #schildkroete{
     position: absolute;
     left: 78vw;
+    bottom: 23vh;
     width: 18vw;
     height: 10vw;
 	background: url(../img/Schildkroete.png) no-repeat;
     background-size: contain;
     z-index: 18;
-    animation: floating_tiere 6s linear infinite;
+    /* animation: floating_tiere 6s linear infinite;
     -webkit-animation: floating_tiere 6s linear infinite;
-    -moz-animation: floating_tiere 6s linear infinite;
+    -moz-animation: floating_tiere 6s linear infinite; */
 }
 
 #sprechblase_Stella_Schildkroete,
@@ -580,7 +582,7 @@ body {
     position:absolute;     
     width: 100vw;
     height: 100vh;
-    z-index:20;
+    z-index:22;
 }
 
 #seifenblase_container {
