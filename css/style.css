@@ -621,7 +621,7 @@ body {
 #seifenblase_text {
     position: absolute;  
     top: 8.5vw;
-    left: 9vw;
+    left: 9.2vw;
     width: 36vw;
     height: 35vw;    
     font-size: 1.5vw;
@@ -637,13 +637,13 @@ body {
 #seifenblase_container p:nth-child(4) {
     padding-top: 1vw;
     font-size: 1.15vw;
-    line-height: 1.75vw;
+    line-height: 1.65vw;
 }
 
 #seifenblase_container p:last-child {
-    padding-top: 1.5vw;
-    font-size: 1.2vw;
-    line-height: 1.8vw;
+    margin-top: 0.6vw;
+    font-size: 1.3vw;
+    line-height: 1.85vw;
 }
 
 /* ++++++++++++ Geschichte endet +++++++++++++++ */
