@@ -639,9 +639,9 @@ body {
 
 #seifenblase_text {
     position: absolute;  
-    top: 8.3vw;
-    left: 8.8vw;
-    width: 36vw;
+    top: 6vw;
+    left: 10.5vw;
+    width: 33vw;
     height: 35vw;    
     font-size: 1.4vw;
     text-align: center;
@@ -655,12 +655,12 @@ body {
 
 #seifenblase_container p:nth-child(4) {
     font-size: 1.1vw;
-    line-height: 1.75vw;
+    line-height: 1.67vw;
 }
 #seifenblase_container p:last-child {
     padding-top: 1vw;
     font-size: 1.2vw;
-    line-height: 1.84vw;
+    line-height: 1.8vw;
 }
 
 
@@ -677,6 +677,7 @@ body {
     font-size: 45px;
     color: saddlebrown;
     text-align: center;
+    text-shadow: 2px 2px #d2a679;
     margin: auto;
     margin-left: 25%;
     margin-right: 25%;
