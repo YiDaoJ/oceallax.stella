@@ -9,6 +9,16 @@ $(document).ready(function(){
     if(window.pageYOffset > 31000 && window.pageYOffset < 34500) {
       // console.log("test");
       bubbleAudio.play();
+    } else if (window.pageYOffset > 63000 && window.pageYOffset < 67000) {
+      bubbleAudio.play();
+    } else if (window.pageYOffset > 101000 && window.pageYOffset < 104800) {
+      bubbleAudio.play();
+    } else if (window.pageYOffset > 135000 && window.pageYOffset < 138400) {
+      bubbleAudio.play();
+    } else if (window.pageYOffset > 162200 && window.pageYOffset < 165400) {
+      bubbleAudio.play();
+    } else {
+      bubbleAudio.pause();
     }
   }  
 });
@@ -16,11 +26,11 @@ $(document).ready(function(){
 
 function loadingCheck() {
   if (document.readyState != "complete") {
-    // showIntro();
-    // window.setTimeout(loadingCheck, 10000);    
+    showIntro();
+    window.setTimeout(loadingCheck, 10000);    
   }
   else {
-    // document.getElementById('loading').id = 'loaded';
+    document.getElementById('loading').id = 'loaded';
   }
 }
 
