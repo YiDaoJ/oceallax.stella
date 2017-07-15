@@ -3,25 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="language" content="deutsch, de">
-	<title>Oceallax – Umweltschutz mit Stella</title>
-    
+	<title>Oceallax – Umweltschutz mit Stella</title>    
 	<link rel="icon" href="img/Stella.png" type="image/png"/>    
 	<link rel="stylesheet" type="text/css" href="css/style.css">	
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>	
 	<script type="text/javascript" src="js/main.js"></script> 
-  <script type="text/javascript" src="js/skrollr.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">  
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
 </head>
 
 <body onload="loadingCheck()">
-	
+    
+    <!-- Laden-Animation -->
 	<div id="loading">
 		<div id="loading_animation">
 		</div>			
 	</div>
-	
-  <audio id="bubble_sound" src="./audio/bubble.mp3" type="audio/mp3">    
-  </audio>
+    
+    <!-- Audio -->
+    <audio id="bubble_sound" src="./audio/bubble.mp3" type="audio/mp3">    
+    </audio>
 
 	<main>
 		<!-- Intro -->
@@ -51,59 +51,59 @@
                  data-3300="display:none;">				
 			</div>
 
-			<div  id="flasche_pos1"
-                    data-0="display: block;"
-                    data-1500="opacity: 0;"
-                    data-1800="opacity: 1;"
-                    data-2250="opacity: 0;"
-					data-2300="display:none;">       	
+			<div id="flasche_pos1"
+                 data-0="display: block;"
+                 data-1500="opacity: 0;"
+                 data-1800="opacity: 1;"
+                 data-2250="opacity: 0;"
+                 data-2300="display:none;">       	
 			</div>
 
-			<div  id="flasche_pos2"
-						data-0="display: block;"
-						data-2000="opacity: 0;"
-						data-2300="opacity: 1;"
-						data-2500="transform: translateX(10vw) rotate(130deg);"
-                        data-2700="opacity: .2;"
-                        dtat-3000="opacity: 0;"
-						data-3400="display:none;">          	
+			<div id="flasche_pos2"
+                 data-0="display: block;"
+                 data-2000="opacity: 0;"
+                 data-2300="opacity: 1;"
+                 data-2500="transform: translateX(10vw) rotate(130deg);"
+                 data-2700="opacity: .2;"
+                 dtat-3000="opacity: 0;"
+                 data-3400="display:none;">          	
 			</div>
 
 		</div>  
 		<!-- end #intro -->
 
 		<!-- Story -->
-		<div 	id="story_container" class="viewport" 
-					data-0="display: none;"
-					data-2800="display: block; margin-top: 100vh;"
-                    data-3300="margin-top: 0;"
-                    data-169000="display:none;">
+		<div id="story_container" class="viewport" 
+             data-0="display: none;"
+             data-2800="display: block; margin-top: 100vh;"
+             data-3300="margin-top: 0;"
+             data-169000="display:none;">
 
-			<div 	id="meer"
-                data-3300="transform:translateX(0vw); display:block"
-                data-end="transform: translateX(-600vw)">		
+			<div id="meer"
+                 data-3300="transform:translateX(0vw); display:block"
+                 data-end="transform: translateX(-600vw)">		
             </div>			
             
-             <div 	id="berg" 
-                    data-3300="transform:translateX(0vw); display:block"
+            <div id="berg" 
+                 data-3300="transform:translateX(0vw); display:block"
 
-                    data-4000="transform: translateX(-10vw);"
-                    data-8000="transform: translateX(-10vw);"
+                 data-4000="transform: translateX(-10vw);"
+                 data-8000="transform: translateX(-10vw);"
 
-                    data-11200="transform: translateX(-50vw);"
-                    data-29000="transform: translateX(-50vw);"
+                 data-11200="transform: translateX(-50vw);"
+                 data-29000="transform: translateX(-50vw);"
 
-                    data-38800="transform: translateX(-150vw);"
-                    data-60000="transform: translateX(-150vw);"
+                 data-38800="transform: translateX(-150vw);"
+                 data-60000="transform: translateX(-150vw);"
 
-                    data-80000="transform: translateX(-300vw);"
-                    data-99500="transform: translateX(-300vw);"
+                 data-80000="transform: translateX(-300vw);"
+                 data-99500="transform: translateX(-300vw);"
 
-                    data-110500="transform: translateX(-400vw);"
-                    data-130500="transform: translateX(-400vw);"
+                 data-110500="transform: translateX(-400vw);"
+                 data-130500="transform: translateX(-400vw);"
 
-                    data-151000="transform: translateX(-550vw);"
-                    data-168000="transform: translateX(-550vw);">
+                 data-151000="transform: translateX(-550vw);"
+                 data-168000="transform: translateX(-550vw);">
 			</div> 
 
 			<div id="boden"
@@ -129,436 +129,465 @@
 			</div>
 
       
-        <div  id="fischschwarm"
-                data-3800="display:block; opacity: 0; transform: translateX(10vw);"
-                data-7800="display:block; opacity: .9; transform: translateX(-65vw);"
-                data-11800="opacity: .2;transform: translateX(-120vw);"
-                data-11850="display: none;"
+            <div id="fischschwarm"
+                 data-3800="display:block; opacity: 0; transform: translateX(10vw);"
+                 data-7800="display:block; opacity: .9; transform: translateX(-65vw);"
+                 data-11800="opacity: .2;transform: translateX(-120vw);"
+                 data-11850="display: none;"
                 
-                data-40800="display:block; opacity: 0; transform: translateX(10vw);"
-                data-47800="display:block; opacity: .9; transform: translateX(-65vw);"
-                data-51800="opacity: .2;transform: translateX(-120vw);"
-                data-51850="display: none;"
+                 data-40800="display:block; opacity: 0; transform: translateX(10vw);"
+                 data-47800="display:block; opacity: .9; transform: translateX(-65vw);"
+                 data-51800="opacity: .2;transform: translateX(-120vw);"
+                 data-51850="display: none;"
+
+                 data-67800="display:block; opacity: 0; transform: translateX(10vw);"
+                 data-71800="display:block; opacity: .9; transform: translateX(-65vw);"
+                 data-75800="opacity: .2; transform: translateX(-120vw);"
+                 data-75850="display: none;"
                 
-                data-83800="display:block; opacity: 0; transform: translateX(10vw);"
-                data-87800="display:block; opacity: .9; transform: translateX(-65vw);"
-                data-91800="opacity: .2; transform: translateX(-120vw);"
-                data-91850="display: none;"
+                 data-83800="display:block; opacity: 0; transform: translateX(10vw);"
+                 data-87800="display:block; opacity: .9; transform: translateX(-65vw);"
+                 data-91800="opacity: .2; transform: translateX(-120vw);"
+                 data-91850="display: none;"
                 
-                data-143800="display:block; opacity: 0; transform: translateX(10vw);"
-                data-147800="display:block; opacity: .9; transform: translateX(-65vw);"
-                data-151800="opacity: .2;transform: translateX(-120vw);"
-                data-151850="display: none;">
-        </div>
+                 data-143800="display:block; opacity: 0; transform: translateX(10vw);"
+                 data-147800="display:block; opacity: .9; transform: translateX(-65vw);"
+                 data-151800="opacity: .2;transform: translateX(-120vw);"
+                 data-151850="display: none;">
+            </div>
 
-			<div 	id="stella"
-						data-3300="transform: translateX(-5vw) rotate(0deg); opacity: .8;"
-						data-3800="transform: translateX(40vw) rotate(-15deg); opacity: 1;"
-						data-4000="transform: translateX(40vw) rotate(-25deg);"    
-						data-7800="transform: translateX(40vw) rotate(0deg);"	
+            <div id="bubbles"
+                 data-3300="display: block;transform: translateX(-5vw);"
+                 data-3800="transform: translateX(40vw);"
+                 data-4000="transform: translateX(40vw);"    
+                 data-7800="transform: translateX(40vw);"	
 
-						data-37000="transform: translateX(40vw) rotate(0deg);"
-						data-38000="transform: translateX(40vw) rotate(15deg);"	
-						data-58000="transform: translateX(40vw) rotate(15deg);"	
-						data-61000="transform: translateX(40vw) rotate(0deg);"	
+                 data-37000="transform: translateX(40vw);"
+                 data-38000="transform: translateX(40vw);"	
+                 data-58000="transform: translateX(40vw);"	
+                 data-61000="transform: translateX(40vw);"	
 
-						data-150000="transform: translateX(40vw) rotate(0deg)"
-						data-153800="transform: translateX(40vw) rotate(-15deg); opacity: 1;"
-						data-154000="transform: translateX(40vw) rotate(-25deg);"    
-						data-157800="transform: translateX(40vw) rotate(0deg);">	
+                 data-150000="transform: translateX(40vw)"
+                 data-153800="transform: translateX(40vw);"
+                 data-154000="transform: translateX(40vw);"    
+                 data-157800="transform: translateX(40vw);">
+                
+                 <div class="bubble"
+                      data-0="display: none;"
+                      data-3500="display: block;"
+                      data-10000="display: none;"                    
+                      data-145000="display: block;"
+                      data-152000="display:none;">
+                </div>
+
+                <div class="bubble"
+                     data-0="display: none;"
+                     data-3500="display: block;"
+                     data-10000="display: none;"
+                     data-145000="display: block;"
+                     data-152000="display:none;">
+                </div>  
+
+            </div>
+
+			<div id="stella"
+                 data-3300="transform: translateX(-5vw) translateY(0vh) rotate(0deg); opacity: .8;"
+                 data-3800="transform: translateX(40vw) translateY(0vh) rotate(-15deg); opacity: 1;"
+                 data-4000="transform: translateX(40vw) translateY(0vh) rotate(-25deg);"    
+                 data-7800="transform: translateX(40vw) translateY(0vh) rotate(0deg);"	
+
+                 data-37000="transform: translateX(40vw) translateY(0vh) rotate(0deg);"
+                 data-38000="transform: translateX(40vw) translateY(0vh) rotate(15deg);"	
+                 data-58000="transform: translateX(40vw) translateY(0vh) rotate(15deg);"	
+                 data-61000="transform: translateX(40vw) translateY(0vh) rotate(0deg);"	
+                
+                 data-68000="transform: translateX(40vw) translateY(0vh) rotate(0deg)"
+                 data-70000="transform: translateX(40vw) translateY(-20vh) rotate(-15deg);"
+                 data-72000="transform: translateX(40vw) translateY(-40vh) rotate(-20deg);"   
+                 data-74000="transform: translateX(40vw) translateY(-40vh) rotate(0deg);" 
+                 data-76000="transform: translateX(40vw) translateY(-20vh) rotate(20deg);" 
+                 data-79000="transform: translateX(40vw) translateY(0vh) rotate(0deg);"
+
+                 data-150000="transform: translateX(40vw) translateY(0vh) rotate(0deg)"
+                 data-153800="transform: translateX(40vw) translateY(0vh) rotate(-15deg);"
+                 data-154000="transform: translateX(40vw) translateY(0vh) rotate(-25deg);"    
+                 data-157800="transform: translateX(40vw) translateY(0vh) rotate(0deg);">	
 			</div>
             
-			<div 	id="flascheOben"
-						data-3300="transform: translateX(-45vw) rotate(50deg); display:block; opacity: .7;"
-						data-4000="transform: translateX(10vw) rotate(50deg); opacity: 1;"						
-						data-22000="transform: translateX(10vw) rotate(50deg);"
-						data-30000="transform: translateX(10vw) rotate(50deg);">			
+			<div id="flascheOben"
+                 data-3300="transform: translateX(-45vw) rotate(50deg); display:block; opacity: .7;"
+                 data-4000="transform: translateX(10vw) rotate(50deg); opacity: 1;"						
+                 data-22000="transform: translateX(10vw) rotate(50deg);"
+                 data-30000="transform: translateX(10vw) rotate(50deg);">			
 			</div>
             
            
-			<!--Szene 0: Stella trifft auf Flaschenpost -->			
-      <div  id="stella_gedanken"
-            data-4000="display: none;"
-            data-4200="display: block; opacity: .3;"
-            data-4500="opacity: 1;"
-            data-6800="opacity: 1;"
-            data-7800="opacity: .4;"
-            data-8000="display: none;"
-            
-            data-152000="display: block; opacity: .3;"
-            data-152500="opacity: 1;"
-            data-160000="opacity: 1;"
-            data-161000="opacity: .3;"
-            data-161500="display: none;">
+			<!-- Szene 0: Stella trifft auf Flaschenpost -->			
+            <div id="stella_gedanken"
+                 data-4000="display: none;"
+                 data-4200="display: block; opacity: .3;"
+                 data-4500="opacity: 1;"
+                 data-6800="opacity: 1;"
+                 data-7800="opacity: .4;"
+                 data-8000="display: none;"
+                
+                 data-152000="display: block; opacity: .3;"
+                 data-152500="opacity: 1;"
+                 data-160000="opacity: 1;"
+                 data-161000="opacity: .3;"
+                 data-161500="display: none;">
 
-        <div id="stella_gedanke_blaze">
-
-          <p  data-3500="display: none;"
-              data-3800="display: block; opacity: .3;"
-              data-3900="opacity: 1;"
-              data-5000="opacity: 1;"
-              data-5300="opacity: .4;"
-              data-5500="display: none">
-              Huh, was ist das denn? 
-              Eine Flasche? Wo kommt die wohl her? 
-              Da ist ja sogar etwas drin!
-          </p>
-
-          <p data-5500="display:none;"
-             data-5800="display: block; opacity: .3;"
-             data-6000="opacity: 1;"
-             data-7000="opacity: 1;"
-             data-7300="opacity: .4"
-             data-7500="display: none;">
-             Oh, die hat es aber eilig. Ich frage mich, wo sie wohl hinwill. Ich sollte ihr folgen und sehen, wo sie mich hinführt! 
-          </p>
-
-          <p  data-152500="display:none;"
-              data-152800="display: block; opacity: .3;"
-              data-153000="opacity: 1;"
-              data-154000="opacity: 1;"
-              data-154300="opacity: .4;"
-              data-154500="display: none;">
-            Oh je, was ist denn das? 
-            Das ist ja so viel von diesem Plastik Zeug! 
-          </p>
-
-          <p  data-154500="display:none;"
-              data-154800="display: block; opacity: .3;"
-              data-155000="opacity: 1;"
-              data-156000="opacity: 1;"
-              data-156300="opacity: .4;"
-              data-156500="display: none;">
-            Ich glaube nicht, dass das so gut ist... 
-            Sieht so aus, als wäre hier Endstation für die Flasche und mich!             
-          </p>
-
-          <p  data-156500="display:none;"
-              data-156800="display: block; opacity: .3;"
-              data-158000="opacity: 1;"
-              data-159000="opacity: 1;"
-              data-159300="opacity: .4;"
-              data-159500="display: none;">
-          	Was für eine böse Überraschung...
-          </p>
-        </div>
-      </div>  
-			<!-- end #stella_gedanken -->
+                <div id="stella_gedanke_blaze">
+                    <p  data-3500="display: none;"
+                        data-3800="display: block; opacity: .3;"
+                        data-3900="opacity: 1;"
+                        data-5000="opacity: 1;"
+                        data-5300="opacity: .4;"
+                        data-5500="display: none">
+                        Huh, was ist das denn? 
+                        Eine Flasche? Wo kommt die wohl her? 
+                        Da ist ja sogar etwas drin!
+                    </p>
+                    <p data-5500="display:none;"
+                        data-5800="display: block; opacity: .3;"
+                        data-6000="opacity: 1;"
+                        data-7000="opacity: 1;"
+                        data-7300="opacity: .4"
+                        data-7500="display: none;">
+                        Oh, die hat es aber eilig. Ich frage mich, wo sie wohl hinwill. Ich sollte ihr folgen und sehen, wo sie mich hinführt! 
+                    </p>
+                    <p  data-152500="display:none;"
+                        data-152800="display: block; opacity: .3;"
+                        data-153000="opacity: 1;"
+                        data-154000="opacity: 1;"
+                        data-154300="opacity: .4;"
+                        data-154500="display: none;">
+                        Oh je, was ist denn das? 
+                        Das ist ja so viel von diesem Plastik Zeug! 
+                    </p>
+                    <p  data-154500="display:none;"
+                        data-154800="display: block; opacity: .3;"
+                        data-155000="opacity: 1;"
+                        data-156000="opacity: 1;"
+                        data-156300="opacity: .4;"
+                        data-156500="display: none;">
+                        Ich glaube nicht, dass das so gut ist... 
+                        Sieht so aus, als wäre hier Endstation für die Flasche und mich!             
+                    </p>
+                    <p  data-156500="display:none;"
+                        data-156800="display: block; opacity: .3;"
+                        data-158000="opacity: 1;"
+                        data-159000="opacity: 1;"
+                        data-159300="opacity: .4;"
+                        data-159500="display: none;">
+                        Was für eine böse Überraschung...
+                    </p>
+                </div>
+            </div>  
+            <!-- end #stella_gedanken -->
+            <!-- end Szene 0  -->
 
       
-			<!-- Szene 1: Gespraech mit Schildkroete -->
-       <div id="schildkroete"
-            data-9800="display: none;"
-            data-10000="opacity:0;display:block;transform:translateX(22vw)"
-            data-10800="opacity:1; "
-            data-11200="transform: translateX(-28vw);"
+			<!-- Szene 1: Dialog mit Schildkroete -->
+            <div id="schildkroete"
+                 data-9800="display: none;"
+                 data-10000="opacity:0;display:block;transform:translateX(22vw)"
+                 data-10800="opacity:1; "
+                 data-11200="transform: translateX(-28vw);"
 
-            data-29000="transform: translateX(-28vw); width: 4%; height: 28%;"
-            data-30500="transform: translateX(-40vw); opacity: .6; width: 2%; height: 14%;"
-            data-33000="transform: translateX(-90vw); opacity: .2; width: 1%; height: 7%;" >
-      </div>  
+                 data-29000="transform: translateX(-28vw); width: 4%; height: 28%;"
+                 data-30500="transform: translateX(-40vw); opacity: .6; width: 2%; height: 14%;"
+                 data-33000="transform: translateX(-90vw); opacity: .2; width: 1%; height: 7%;" >
+            </div>  
             
-       <div   id="sprechblase_Stella_Schildkroete"
-              data-11500="display: block; opacity:0;"
-              data-12000="opacity: 1;" 
-              data-13500="opacity: 1;"
-              data-13600="opacity: .3;"
-              data-13800="display: none;"
+            <div id="sprechblase_Stella_Schildkroete"
+                 data-11500="display: block; opacity:0;"
+                 data-12000="opacity: 1;" 
+                 data-13500="opacity: 1;"
+                 data-13600="opacity: .3;"
+                 data-13800="display: none;"
 
-              data-16000="display: block; opacity:.3;"
-              data-16400="opacity: 1;"
-              data-17300="opacity: 1;"
-              data-17800="opacity: .5;"
-              data-18200="display: none;"
+                 data-16000="display: block; opacity:.3;"
+                 data-16400="opacity: 1;"
+                 data-17300="opacity: 1;"
+                 data-17800="opacity: .5;"
+                 data-18200="display: none;"
 
-              data-22700="display: block; opacity: .3;"
-              data-22900="opacity: 1;"
-              data-24000="opacity: 1;"
-              data-24300="opacity: .4;"
-              data-24500="display: none;"
+                 data-22700="display: block; opacity: .3;"
+                 data-22900="opacity: 1;"
+                 data-24000="opacity: 1;"
+                 data-24300="opacity: .4;"
+                 data-24500="display: none;"
 
-              data-27200="display: block; opacity: .3;"
-              data-27500="opacity: 1;"
-              data-28400="opacity: 1;"
-              data-28600="opacity: .5;"
-              data-28800="opacity: 0;"
-              data-28900="display: none;">          
-          
-        <div class="text_Stella_Schildkroete">
-
-          <p  data-11500="display: none;"
-              data-11800="display: block; opacity: .3;"
-              data-12100="opacity: 1;"
-              data-12700="opacity: .3;"
-              data-12900="display: none;">
-            Hallo, ich bin Stella und wie heißt du?
-          </p> 
-            
-          <p  data-12950="display: none;"
-              data-13000="display: block; opacity: .3;"
-              data-13100="opacity: 1;"
-              data-13600="opacity: 0.6;"
-              data-13700="display: none;">
-           	So einen außergewöhnlichen Panzer wie deinen hab' ich in meinem ganzen Leben noch nicht gesehen!
-          </p>
-
-          <p  data-16100="display: none;"
-              data-16300="display: block; opacity: .5;"
-              data-16500="opacity: 1;"
-              data-17100="opacity: 1;"
-              data-17500="opacity: .5"
-              data-17900="display: none;">
-            Tut das denn weh?
-          </p>
-
-          <p  data-22800="display: none;"
-              data-23000="display: block; opacity: 0.5"
-              data-23200="opacity: 1;"
-              data-23900="opacity: 1;"
-              data-24200="opacity: .4;"
-              data-24400="display: none;">
-            Aber ich möchte unbedingt wissen, was mit der Flasche passiert!
-          </p>
-
-          <p  data-27500="display: none;"
-              data-27700="display: block; opacity: 1;"
-              data-28300="opacity: 1;"
-              data-28500="opacity: .4;"
-              data-28700="display: none;">
-              Danke für deinen Rat, ich werde mal schnell weiterschwimmen, bevor ich die Flasche aus den Augen verliere. Machs gut!
-          </p>
- 
-      	 </div> 
-         <!-- end .text_Stella_Schildkroete -->
-
-       </div> 
-       <!-- end #sprechblase_Stella_Schildkroete  -->
+                 data-27200="display: block; opacity: .3;"
+                 data-27500="opacity: 1;"
+                 data-28400="opacity: 1;"
+                 data-28600="opacity: .5;"
+                 data-28800="opacity: 0;"
+                 data-28900="display: none;">          
+                
+                <div class="text_Stella_Schildkroete">
+                    <p  data-11500="display: none;"
+                        data-11800="display: block; opacity: .3;"
+                        data-12100="opacity: 1;"
+                        data-12700="opacity: .3;"
+                        data-12900="display: none;">
+                        Hallo, ich bin Stella und wie heißt du?
+                    </p>                     
+                    <p  data-12950="display: none;"
+                        data-13000="display: block; opacity: .3;"
+                        data-13100="opacity: 1;"
+                        data-13600="opacity: 0.6;"
+                        data-13700="display: none;">
+                        So einen außergewöhnlichen Panzer wie deinen hab' ich in meinem ganzen Leben noch nicht gesehen!
+                    </p>
+                    <p  data-16100="display: none;"
+                        data-16300="display: block; opacity: .5;"
+                        data-16500="opacity: 1;"
+                        data-17100="opacity: 1;"
+                        data-17500="opacity: .5"
+                        data-17900="display: none;">
+                        Tut das denn weh?
+                    </p>
+                    <p  data-22800="display: none;"
+                        data-23000="display: block; opacity: 0.5"
+                        data-23200="opacity: 1;"
+                        data-23900="opacity: 1;"
+                        data-24200="opacity: .4;"
+                        data-24400="display: none;">
+                        Aber ich möchte unbedingt wissen, was mit der Flasche passiert!
+                    </p>
+                    <p  data-27500="display: none;"
+                        data-27700="display: block; opacity: 1;"
+                        data-28300="opacity: 1;"
+                        data-28500="opacity: .4;"
+                        data-28700="display: none;">
+                        Danke für deinen Rat, ich werde mal schnell weiterschwimmen, bevor ich die Flasche aus den Augen verliere. Machs gut!
+                    </p>        
+                </div> 
+                <!-- end .text_Stella_Schildkroete -->
+            </div> 
+            <!-- end #sprechblase_Stella_Schildkroete  -->
  
             
-        <div    id="sprechblase_Schildkroete"
-                data-13800="display: none;"
-                data-14000="display: block; opacity:0;"
-                data-14500="opacity: 1;"
-                data-15400="opacity: 1;"
-                data-15700="opacity: .3;"
-                data-15800="opacity: 0; display:none;"
+            <div id="sprechblase_Schildkroete"
+                 data-13800="display: none;"
+                 data-14000="display: block; opacity:0;"
+                 data-14500="opacity: 1;"
+                 data-15400="opacity: 1;"
+                 data-15700="opacity: .3;"
+                 data-15800="opacity: 0; display:none;"
 
-                data-18400="display: block;opacity: .3;"
-                data-18800="opacity: 1;"
-                data-22000="opacity: 1;"
-                data-22300="opacity: .5;"
-                data-22500="display: none;"
+                 data-18400="display: block;opacity: .3;"
+                 data-18800="opacity: 1;"
+                 data-22000="opacity: 1;"
+                 data-22300="opacity: .5;"
+                 data-22500="display: none;"
 
-                data-24800="display:block; opacity: .3;"
-                data-25200="opacity: 1;"
-                data-26400="opacity: 1;"
-                data-26700="opacity: .5;"
-                data-27000="display: none;">       
+                 data-24800="display:block; opacity: .3;"
+                 data-25200="opacity: 1;"
+                 data-26400="opacity: 1;"
+                 data-26700="opacity: .5;"
+                 data-27000="display: none;">       
 
-        <div class="text_Schildkroete">
+                <div class="text_Schildkroete">
+                    <p 	data-13800="display: none;"
+                        data-13900="display: block; opacity: .4;"
+                        data-14100="opacity: 1;"
+                        data-14700="opacity: 1;"
+                        data-14800="opacity: .3"
+                        data-14850="display: none;">
+                        Hallo, ich bin Peanut! Den habe ich schon seit ich denken kann.
+                    </p>
 
-					<p 	data-13800="display: none;"
-							data-13900="display: block; opacity: .4;"
-							data-14100="opacity: 1;"
-							data-14700="opacity: 1;"
-							data-14800="opacity: .3"
-							data-14850="display: none;">
-						Hallo, ich bin Peanut! Den habe ich schon seit ich denken kann.
-						</p>
+                    <p 	data-14850="display: none;"
+                        data-14900="display: block;opacity: .3;"
+                        data-15000="opacity:1;"
+                        data-15600="opacity: 1;"
+                        data-15700="opacity: .3"
+                        data-15750="display: none;">
+                        Das Ding, das ich an meinem Panzer habe, schwimmt da hinten zu Haufe.
+                    </p>
 
-					<p 	data-14850="display: none;"
-							data-14900="display: block;opacity: .3;"
-							data-15000="opacity:1;"
-							data-15600="opacity: 1;"
-							data-15700="opacity: .3"
-							data-15750="display: none;">
-						Das Ding, das ich an meinem Panzer habe, schwimmt da hinten zu Haufe.
-					</p>
-
-					<p  data-18400="display: none;"
-							data-18500="display: block; opacity: .3;"
-							data-19000="opacity: 1;"
-							data-19800="opacity: 1;"
-							data-20000="opacity: .3"
-							data-20300="display: none;">
-						Nein, ich habe keine Schmerzen. 
-						Aber ich habe hier schon so einige Tiere gesehen, 
-						die sich an den Flossen verletzt haben oder stranguliert wurden. 
-					</p>            
-					<p  data-20300="display:none;"
-							data-20600="display: block; opacity: .4;"
-							data-20900="opacity: 1;"
-							data-21700="opacity: 1;"
-							data-22100="opacity: .3;"
-							data-22400="display: none;">
-						Erst vor kurzen bin ich einem Delfin begegnet, 
-						der sich so die Flosse verletzt hat. Schwimm besser nicht in die Richtung!
-					</p>
-
-					<p  data-25000="display: none;"
-							data-25300="display: block; opacity: .4;"
-							data-25500="opacity: 1;"
-							data-26200="opacity: 1"
-							data-26300="opacity: .3;"
-							data-26500="display: none;">
-						Na gut, du bist ja noch klein und wendig, aber pass' trotzdem auf, wo du hinschwimmst!
-					</p> 
-        </div> 
-         <!--  end .text_Schildkroete   -->
-      </div> 
-       <!--  end #sprechblase_Schildkroete  -->
-            
+                    <p  data-18400="display: none;"
+                        data-18500="display: block; opacity: .3;"
+                        data-19000="opacity: 1;"
+                        data-19800="opacity: 1;"
+                        data-20000="opacity: .3"
+                        data-20300="display: none;">
+                        Nein, ich habe keine Schmerzen. 
+                        Aber ich habe hier schon so einige Tiere gesehen, 
+                        die sich an den Flossen verletzt haben oder stranguliert wurden. 
+                    </p>            
+                    <p  data-20300="display:none;"
+                        data-20600="display: block; opacity: .4;"
+                        data-20900="opacity: 1;"
+                        data-21700="opacity: 1;"
+                        data-22100="opacity: .3;"
+                        data-22400="display: none;">
+                        Erst vor kurzen bin ich einem Delfin begegnet, 
+                        der sich so die Flosse verletzt hat. Schwimm besser nicht in die Richtung!
+                    </p>
+                    <p  data-25000="display: none;"
+                        data-25300="display: block; opacity: .4;"
+                        data-25500="opacity: 1;"
+                        data-26200="opacity: 1"
+                        data-26300="opacity: .3;"
+                        data-26500="display: none;">
+                        Na gut, du bist ja noch klein und wendig, aber pass' trotzdem auf, wo du hinschwimmst!
+                    </p> 
+                </div> 
+                <!--  end .text_Schildkroete   -->
+            </div> 
+            <!--  end #sprechblase_Schildkroete  -->
+            <!-- end Szene 1 -->            
         
-      <!-- Szene 2 - Seestern -->
-			<div 	id="seestern"
-						data-34300="display: none;"
-						data-34500="opacity: 1; display:block; transform: translateX(20vw);"
-						data-38800="opacity: 1; transform: translateX(-45vw);"
-                 
-						data-60000="transform: translateX(-45vw);"
-						data-78000="transform: translateX(-250vw);"
-						data-78500="display: none;" >
+            <!-- Szene 2: Dialog mit Seestern -->
+			<div id="seestern"
+                 data-34300="display: none;"
+                 data-34500="opacity: 1; display:block; transform: translateX(20vw);"
+                 data-38800="opacity: 1; transform: translateX(-45vw);"
+            
+                 data-60000="transform: translateX(-45vw);"
+                 data-78000="transform: translateX(-250vw);"
+                 data-78500="display: none;" >
 			</div>   
 
-			<div  id="sprechblase_Stella_Seestern"
-						data-39500="display: block; opacity:0;"
-						data-41000="opacity: 1;" 
-						data-41500="opacity: 1;"
-						data-41600="opacity: .3;"
-						data-41800="display:none;"
+			<div id="sprechblase_Stella_Seestern"
+                 data-39500="display: block; opacity:0;"
+                 data-41000="opacity: 1;" 
+                 data-41500="opacity: 1;"
+                 data-41600="opacity: .3;"
+                 data-41800="display:none;"
 
-						data-43500="display: block; opacity:.3;"
-						data-44000="opacity: 1;"
-						data-44300="opacity: 1;"
-						data-44800="opacity: .5;"
-						data-45000="display: none;"
+                 data-43500="display: block; opacity:.3;"
+                 data-44000="opacity: 1;"
+                 data-44300="opacity: 1;"
+                 data-44800="opacity: .5;"
+                 data-45000="display: none;"
 
-						data-48500="display: block; opacity: .3;"
-						data-48900="opacity: 1;"
-						data-50000="opacity: 1;"
-						data-50300="opacity: .4;"
-						data-50500="display: none;"
+                 data-48500="display: block; opacity: .3;"
+                 data-48900="opacity: 1;"
+                 data-50000="opacity: 1;"
+                 data-50300="opacity: .4;"
+                 data-50500="display: none;"
 
-						data-53200="display: block; opacity: .3;"
-						data-54500="opacity: 1;"
-						data-54400="opacity: 1;"
-						data-54600="opacity: .5;"
-						data-54800="opacity: 0;"
-						data-55900="display: none;"
+                 data-53200="display: block; opacity: .3;"
+                 data-54500="opacity: 1;"
+                 data-54400="opacity: 1;"
+                 data-54600="opacity: .5;"
+                 data-54800="opacity: 0;"
+                 data-55900="display: none;"
 
-						data-58200="display: block; opacity: .3;"
-						data-58500="opacity: 1;"
-						data-59400="opacity: 1;"
-						data-59600="opacity: .5;"
-						data-59800="opacity: 0;"
-						data-59900="display: none;"> 
+                 data-58200="display: block; opacity: .3;"
+                 data-58500="opacity: 1;"
+                 data-59400="opacity: 1;"
+                 data-59600="opacity: .5;"
+                 data-59800="opacity: 0;"
+                 data-59900="display: none;"> 
 				
 				<div class="text_Stella_Seestern">
 
 					<p  data-39500="display: none;"
-							data-39800="display: block; opacity: .3;"
-							data-40100="opacity: 1;"
-							data-40500="opacity: 1;"
-							data-40700="opacity: .3;"
-							data-40900="display: none;">
+                        data-39800="display: block; opacity: .3;"
+                        data-40100="opacity: 1;"
+                        data-40500="opacity: 1;"
+                        data-40700="opacity: .3;"
+                        data-40900="display: none;">
 						Hey, Seestern! Was machst du denn da vorne?
 					</p>          
-					<p    data-43950="display: none;"
-								data-44200="display: block; opacity: .3;"
-								data-44700="opacity: 1;"
-								data-45200="opacity: 0.6;"
-								data-45900="display: none;">
+					<p  data-43950="display: none;"
+                        data-44200="display: block; opacity: .3;"
+                        data-44700="opacity: 1;"
+                        data-45200="opacity: 0.6;"
+                        data-45900="display: none;">
 						Was denn?
 					</p>
 
 					<p  data-49000="display: none;"
-							data-49500="display: block; opacity: .5;"
-							data-49900="opacity: 1;"
-							data-50100="opacity: 1;"
-							data-50500="opacity: .5"
-							data-50900="display: none;">
+                        data-49500="display: block; opacity: .5;"
+                        data-49900="opacity: 1;"
+                        data-50100="opacity: 1;"
+                        data-50500="opacity: .5"
+                        data-50900="display: none;">
 						Wirklich? Was war das denn?
-
 					</p>
 					<p  data-53800="display: none;"
-							data-54000="display: block; opacity: 0.5"
-							data-54200="opacity: 1;"
-							data-54900="opacity: 1;"
-							data-55200="opacity: .4;"
-							data-55400="display: none;">
+                        data-54000="display: block; opacity: 0.5"
+                        data-54200="opacity: 1;"
+                        data-54900="opacity: 1;"
+                        data-55200="opacity: .4;"
+                        data-55400="display: none;">
 						Das ist ja furchtbar! Ich bin froh, dass es dir gut geht.
 					</p>
 					<p  data-58300="display: none;"
-							data-58700="display: block; opacity: 1;"
-							data-59300="opacity: 1;"
-							data-59500="opacity: .4;"
-							data-59700="display: none;">
+                        data-58700="display: block; opacity: 1;"
+                        data-59300="opacity: 1;"
+                        data-59500="opacity: .4;"
+                        data-59700="display: none;">
 						Werde ich machen. Ich muss jetzt auch weiter, bis bald!
 					</p> 
-        </div>              
-      </div>
+                </div>   
+                <!-- end .text_Stella_Seestern  -->
+            </div>
+            <!-- end #sprechblase_Stella_Seestern -->
       
-			<div 	id="sprechblase_Seestern"                
-						data-41000="display: none;"
-						data-41800="display: block; opacity:0;"
-						data-42000="opacity: 1;"
-						data-42400="opacity: 1;"
-						data-53000="opacity: .3;"
-						data-43500="display:none;"
+			<div id="sprechblase_Seestern"                
+                 data-41000="display: none;"
+                 data-41800="display: block; opacity:0;"
+                 data-42000="opacity: 1;"
+                 data-42400="opacity: 1;"
+                 data-53000="opacity: .3;"
+                 data-43500="display:none;"
 
-						data-45300="display: block;opacity: .3;"
-						data-47000="opacity: 1;"
-						data-47200="opacity: 1;"
-						data-47900="opacity: .3;"
-						data-48500="display: none;"
+                 data-45300="display: block;opacity: .3;"
+                 data-47000="opacity: 1;"
+                 data-47200="opacity: 1;"
+                 data-47900="opacity: .3;"
+                 data-48500="display: none;"
 
-						data-51200="display:block; opacity: .3;"
-						data-51800="opacity: 1;"
-						data-52400="opacity: 1;"
-						data-52700="opacity: .3;"
-						data-52900="opacity:0;display:none;"
-							
-						data-56200="display:block; opacity: .3;"
-						data-56500="opacity: 1;"
-						data-57400="opacity: 1;"
-						data-57600="opacity: .5;"
-            data-57800="opacity: 0;"
-						data-58000="display: none;">       
+                 data-51200="display:block; opacity: .3;"
+                 data-51800="opacity: 1;"
+                 data-52400="opacity: 1;"
+                 data-52700="opacity: .3;"
+                 data-52900="opacity:0;display:none;"
+                    
+                 data-56200="display:block; opacity: .3;"
+                 data-56500="opacity: 1;"
+                 data-57400="opacity: 1;"
+                 data-57600="opacity: .5;"
+                 data-57800="opacity: 0;"
+                 data-58000="display: none;">       
 
-        <div class="text_Seestern">
-
+                <div class="text_Seestern">
 					<p 	data-41800="display: none;"
-							data-41900="display: block; opacity: .4;"
-							data-42100="opacity: 1;"
-							data-42700="opacity: 1;"
-							data-42800="opacity: .3;"
-							data-42850="display: none;">
-						Oh, hallo Stella! Du wirst nicht glauben, was mir heute Morgen passiert ist!
-						</p>
-
+                        data-41900="display: block; opacity: .4;"
+                        data-42100="opacity: 1;"
+                        data-42700="opacity: 1;"
+                        data-42800="opacity: .3;"
+                        data-42850="display: none;">
+                        Oh, hallo Stella! Du wirst nicht glauben, was mir heute Morgen passiert ist!
+                    </p>
 					<p 	data-46800="display: none;"
-							data-47000="display: block;opacity: .3;"
-							data-47300="opacity:1;"
-							data-47800="opacity: 1;"
-							data-48000="opacity: .3"
-							data-48500="display: none;">
-						Ich lag auf dem Boden, noch halb am Schlafen und auf einmal sehe ich nur, 
-						wie etwas richtig Großes von oben herunterfällt, genau auf mich zu!
-
-					</p>
-
+                        data-47000="display: block;opacity: .3;"
+                        data-47300="opacity:1;"
+                        data-47800="opacity: 1;"
+                        data-48000="opacity: .3"
+                        data-48500="display: none;">
+                        Ich lag auf dem Boden, noch halb am Schlafen und auf einmal sehe ich nur, 
+                        wie etwas richtig Großes von oben herunterfällt, genau auf mich zu!
+                    </p>
 					<p  data-51300="display:none;"
-							data-51600="display: block; opacity: .4;"
-							data-51900="opacity: 1;"
-							data-52300="opacity: 1;"
-							data-52500="opacity: .3;"
-							data-52600="display: none;">
+                        data-51600="display: block; opacity: .4;"
+                        data-51900="opacity: 1;"
+                        data-52300="opacity: 1;"
+                        data-52500="opacity: .3;"
+                        data-52600="display: none;">
 				        Ein Autoreifen, so ein total großer! 
-								Ich konnte grade noch rechtzeitig entkommen, 
-								aber mein Zuhause ist jetzt vollkommen zerstört! 
-								Ich traue mich gar nicht mehr, mich auf den Boden zu legen.
-					</p>
-					
+                        Ich konnte grade noch rechtzeitig entkommen, 
+                        aber mein Zuhause ist jetzt vollkommen zerstört! 
+                        Ich traue mich gar nicht mehr, mich auf den Boden zu legen.
+					</p>					
 					<p  data-56200="display: none;"
 				        data-56300="display: block; opacity: .4;"
                         data-56500="opacity: 1;"
@@ -568,381 +597,358 @@
 						Pass bloß auf dich auf, wenn du hier so rumschwimmst. 
 						Man weiß nie, was von oben kommt!
 					</p> 
-        </div> 
-      </div> <!-- Ende Seestern -->
+                </div> 
+                <!-- end .text_Seestern -->
+            </div> 
+            <!-- end #sprechblase_Seestern  -->
+            <!-- end Szene 2 -->
 
+			<!-- Szene 3: Dialog mit Koralle -->
 
-				<!-- Szene 2 - Koralle -->
-
-        <div id="koralle"
-             data-67000="display: none;"
-             data-75500="display:block; opacity: 1; transform: translateX(13vw);"
-             data-80000="transform:translateX(-45vw);"
-             
-             data-99500="transform:translateX(-45vw);"
-             data-110000="transform:translate(-235vw);"
-             data-110500="display: none;"> 
-      	</div>  
+            <div id="koralle"
+                data-67000="display: none;"
+                data-75500="display:block; opacity: 1; transform: translateX(13vw);"
+                data-80000="transform:translateX(-45vw);"
+                
+                data-99500="transform:translateX(-45vw);"
+                data-110000="transform:translate(-235vw);"
+                data-110500="display: none;"> 
+            </div>  
             
-       	<div  id="sprechblase_Stella_Koralle"
-              data-81500="display: block; opacity:0;"
-              data-82000="opacity: 1;" 
-              data-83200="opacity: 1;"
-              data-83600="opacity: .3;"
-              data-83800="display:none;"
+            <div  id="sprechblase_Stella_Koralle"
+                data-81500="display: block; opacity:0;"
+                data-82000="opacity: 1;" 
+                data-83200="opacity: 1;"
+                data-83600="opacity: .3;"
+                data-83800="display:none;"
 
-              data-86000="display: block; opacity:.3;"
-              data-86400="opacity: 1;"
-              data-87300="opacity: 1;"
-              data-87800="opacity: .5;"
-              data-88200="display: none;"
+                data-86000="display: block; opacity:.3;"
+                data-86400="opacity: 1;"
+                data-87300="opacity: 1;"
+                data-87800="opacity: .5;"
+                data-88200="display: none;"
 
-              data-92700="display: block; opacity: .3;"
-              data-92900="opacity: 1;"
-              data-94000="opacity: 1;"
-              data-94300="opacity: .4;"
-              data-94500="display: none;"
-             
-              data-96300="display: block; opacity: .3;"
-              data-96500="opacity: 1;"
-              data-97100="opacity: 1;"
-              data-97300="opacity: .5;"
-              data-97500="display: none;">  
-         
-          
-        <div 	class="text_Stella_Koralle">
-
-          <p  data-81600="display: none;"
-              data-81900="display: block; opacity: .3;"
-              data-82200="opacity: 1;"
-              data-82800="opacity: .3;"
-              data-83000="display: none;">
-              Hey, was ist denn mit dir passiert? Du siehst ja gar nicht gut aus! 
-          </p> 
+                data-92700="display: block; opacity: .3;"
+                data-92900="opacity: 1;"
+                data-94000="opacity: 1;"
+                data-94300="opacity: .4;"
+                data-94500="display: none;"
+                
+                data-96300="display: block; opacity: .3;"
+                data-96500="opacity: 1;"
+                data-97100="opacity: 1;"
+                data-97300="opacity: .5;"
+                data-97500="display: none;">             
             
-            <p 	data-86050="display: none;"
-				data-86200="display: block;opacity: .3;"
-                data-86400="opacity:1;"
-                data-86600="opacity: 1;"
-                data-87700="opacity: .3"
-                data-88150="display: none;">
-                Oh nein! Ist alles in Ordnung? 
-            </p>
+                <div class="text_Stella_Koralle">
+                    <p  data-81600="display: none;"
+                        data-81900="display: block; opacity: .3;"
+                        data-82200="opacity: 1;"
+                        data-82800="opacity: .3;"
+                        data-83000="display: none;">
+                        Hey, was ist denn mit dir passiert? Du siehst ja gar nicht gut aus! 
+                    </p>                 
+                    <p 	data-86050="display: none;"
+                        data-86200="display: block;opacity: .3;"
+                        data-86400="opacity:1;"
+                        data-86600="opacity: 1;"
+                        data-87700="opacity: .3"
+                        data-88150="display: none;">
+                        Oh nein! Ist alles in Ordnung? 
+                    </p>
+                    <p  data-92800="display: none;"
+                        data-93000="display: block; opacity: 0.5"
+                        data-93200="opacity: 1;"
+                        data-93900="opacity: 1;"
+                        data-94200="opacity: .4;"
+                        data-94400="display: none;">
+                        Ich wünschte wir<br> könnten etwas dagegen unternehmen...
+                    </p>
 
-          <p  data-92800="display: none;"
-              data-93000="display: block; opacity: 0.5"
-              data-93200="opacity: 1;"
-              data-93900="opacity: 1;"
-              data-94200="opacity: .4;"
-              data-94400="display: none;">
-            Ich wünschte wir<br> könnten etwas dagegen unternehmen...
-          </p>
+                    <p  data-96400="display: none;"
+                        data-96600="display: block; opacity: 1;"
+                        data-97050="opacity: 1;"
+                        data-97200="opacity: .4;"
+                        data-97300="display: none;">
+                        Ich werde aufpassen, danke. Gute Besserung, Koralle! 
+                    </p>    
+                </div> 
+                <!--end .text_Stella_Koralle -->
+            </div> 
+            <!--end #sprechblase_Stella_Koralle --> 
+                
+            <div id="sprechblase_Koralle"
+                data-84000="display: block; opacity:0;"
+                data-84500="opacity: 1;"
+                data-85100="opacity: 1;"
+                data-85300="opacity: .3;"
+                data-85500="display:none;"
 
-          <p  data-96400="display: none;"
-              data-96600="display: block; opacity: 1;"
-              data-97050="opacity: 1;"
-              data-97200="opacity: .4;"
-              data-97300="display: none;">
-           Ich werde aufpassen, danke. Gute Besserung, Koralle! 
-          </p>
- 
-      	 </div> 
-         <!--end .text_Stella_Koralle -->
-       </div> 
-       <!--end #sprechblase_Stella_Koralle --> 
-            
-       <div id="sprechblase_Koralle"
-            data-84000="display: block; opacity:0;"
-            data-84500="opacity: 1;"
-            data-85100="opacity: 1;"
-            data-85300="opacity: .3;"
-            data-85500="display:none;"
-
-            data-88400="display: block;opacity: .3;"
-            data-88800="opacity: 1;"
-            data-92000="opacity: 1;"
-            data-92300="opacity: .5;"
-            data-92500="display: none;"
-
-            data-94800="display:block; opacity: .3;"
-            data-95200="opacity: 1;"
-            data-96000="opacity: 1;"
-            data-96100="opacity: .5;"
-            data-96200="display: none;"   
-		   
-            data-97600="display:block; opacity: .3;"
-            data-97800="opacity: 1;"
-            data-98100="opacity: 1;"
-            data-98300="opacity: .5;"
-            data-98500="display: none;">   
-
-        <div class="text_Koralle">
-            <p 	data-84100="display: none;"
-                data-84200="display: block; opacity: .4;"
-                data-84300="opacity: 1;"
-                data-84800="opacity: 1;"
-                data-84900="opacity: .3"
-                data-85150="display: none;">
-                Stella! Gut, dass du da bist! Ich habe mich vorhin in einem von diesen Fischernetzen verheddert und dabei ist mir ein Stück meiner Äste abgebrochen. 
-            </p>
-
-            <p  data-88500="display: none;"
-                data-88700="display: block; opacity: .5;"
-                data-88900="opacity: 1;"
-                data-89600="opacity: 1;"
-                data-89800="opacity: .5"
-                data-89900="display: none;">
-                Es tut etwas weh, aber meine Mitbewohner hat es viel schlimmer getroffen. So etwas kommt in letzter Zeit viel zu häufig vor. 
-            </p>
-			
-            <p  data-89900="display: none;"
-                data-90600="display: block; opacity: .5;"
-                data-91300="opacity: 1;"
+                data-88400="display: block;opacity: .3;"
+                data-88800="opacity: 1;"
                 data-92000="opacity: 1;"
-                data-92200="opacity: .5"
-                data-92450="display: none;">
-                Erst neulich wurde ein anderes Korallenriff fast komplett zerstört wegen Metallteilen, die von oben kamen!
-            </p>		
-			
-            <p  data-94900="display: none;"
-                data-95000="display: block; opacity: .3;"
+                data-92300="opacity: .5;"
+                data-92500="display: none;"
+
+                data-94800="display:block; opacity: .3;"
                 data-95200="opacity: 1;"
-                data-95700="opacity: 1;"
-                data-96000="opacity: .3"
-                data-96100="display: none;">
-                Dafür sind wir wohl leider zu klein. Sei einfach vorsichtig, wenn du	weiterschwimmst, und versuche die Korallenriffe zu vermeiden! 
-            </p>  
+                data-96000="opacity: 1;"
+                data-96100="opacity: .5;"
+                data-96200="display: none;"   
+            
+                data-97600="display:block; opacity: .3;"
+                data-97800="opacity: 1;"
+                data-98100="opacity: 1;"
+                data-98300="opacity: .5;"
+                data-98500="display: none;">   
 
-            <p  data-97650="display: none;"
-                data-97800="display: block; opacity: .4;"
-                data-97900="opacity: 1;"
-                data-98150="opacity: 1"
-                data-98250="opacity: .3;"
-                data-98450="display: none;">
-                Danke, mach’s gut, Stella! 
-            </p> 
-         </div> 
-         <!--  end .text_Koralle   -->
-
-       </div> 
-       <!--  end #sprechblase_Koralle -->
+                <div class="text_Koralle">
+                    <p 	data-84100="display: none;"
+                        data-84200="display: block; opacity: .4;"
+                        data-84300="opacity: 1;"
+                        data-84800="opacity: 1;"
+                        data-84900="opacity: .3"
+                        data-85150="display: none;">
+                        Stella! Gut, dass du da bist! Ich habe mich vorhin in einem von diesen Fischernetzen verheddert und dabei ist mir ein Stück meiner Äste abgebrochen. 
+                    </p>
+                    <p  data-88500="display: none;"
+                        data-88700="display: block; opacity: .5;"
+                        data-88900="opacity: 1;"
+                        data-89600="opacity: 1;"
+                        data-89800="opacity: .5"
+                        data-89900="display: none;">
+                        Es tut etwas weh, aber meine Mitbewohner hat es viel schlimmer getroffen. So etwas kommt in letzter Zeit viel zu häufig vor. 
+                    </p>                
+                    <p  data-89900="display: none;"
+                        data-90600="display: block; opacity: .5;"
+                        data-91300="opacity: 1;"
+                        data-92000="opacity: 1;"
+                        data-92200="opacity: .5"
+                        data-92450="display: none;">
+                        Erst neulich wurde ein anderes Korallenriff fast komplett zerstört wegen Metallteilen, die von oben kamen!
+                    </p>                
+                    <p  data-94900="display: none;"
+                        data-95000="display: block; opacity: .3;"
+                        data-95200="opacity: 1;"
+                        data-95700="opacity: 1;"
+                        data-96000="opacity: .3"
+                        data-96100="display: none;">
+                        Dafür sind wir wohl leider zu klein. Sei einfach vorsichtig, wenn du	weiterschwimmst, und versuche die Korallenriffe zu vermeiden! 
+                    </p>
+                    <p  data-97650="display: none;"
+                        data-97800="display: block; opacity: .4;"
+                        data-97900="opacity: 1;"
+                        data-98150="opacity: 1"
+                        data-98250="opacity: .3;"
+                        data-98450="display: none;">
+                        Danke, mach’s gut, Stella! 
+                    </p> 
+                </div> 
+                <!--  end .text_Koralle   -->
+            </div> 
+            <!--  end #sprechblase_Koralle -->
+            <!-- end Szene 3  -->
 			 
         
-       <!-- Szene 3: Gespraech Stella - Fische -->
-            
-        <div id="fische"
-             data-100000="display: none;"
-             data-101000="opacity:1; display:block;"
-             data-108000="opacity:1; transform:translateX(40vw)"    				
-             data-110900="transform: translateX(-10vw);"
+        <!-- Szene 4: Dialog mit Fische -->            
+            <div id="fische"
+                 data-100000="display: none;"
+                 data-101000="opacity:1; display:block;"
+                 data-108000="opacity:1; transform:translateX(40vw)"    				
+                 data-110900="transform: translateX(-10vw);"
 
-             data-130000="transform: translateX(-10vw); width: 4%; height: 28%;"
-             data-135500="transform: translateX(-40vw); opacity: .6; width: 2%; height: 14%;"
-             data-138000="transform: translateX(-90vw); opacity: .2; width: 1%; height: 7%;" >
-      </div>  
+                 data-130000="transform: translateX(-10vw); width: 4%; height: 28%;"
+                 data-135500="transform: translateX(-40vw); opacity: .6; width: 2%; height: 14%;"
+                 data-138000="transform: translateX(-90vw); opacity: .2; width: 1%; height: 7%;" >
+            </div>  
             
-       <div id="sprechblase_Stella_Fische"
-            data-113200="display: block; opacity:0;"
-            data-113700="opacity: 1;" 
-            data-115200="opacity: 1;"
-            data-115300="opacity: .3;"
-            data-115400="display:none"
-					
-            data-118450="display: block; opacity:0;"
-            data-118950="opacity: 1;" 
-            data-120450="opacity: 1;"
-            data-120550="opacity: .3;"
-            data-120650="display:none"
-					
-            data-122000="display: block; opacity:0;"
-            data-122500="opacity: 1;" 
-            data-124000="opacity: 1;"
-            data-124100="opacity: .3;"
-            data-124200="display:none"
-					
-            data-126200="display: block; opacity:0;"
-            data-126250="opacity: 1;" 
-            data-127350="opacity: 1;"
-            data-127400="opacity: .3;"
-            data-127450="display:none">          
-          
-        <div 	class="text_Stella_Fische">
+            <div id="sprechblase_Stella_Fische"
+                 data-113200="display: block; opacity:0;"
+                 data-113700="opacity: 1;" 
+                 data-115200="opacity: 1;"
+                 data-115300="opacity: .3;"
+                 data-115400="display:none"
+                        
+                 data-118450="display: block; opacity:0;"
+                 data-118950="opacity: 1;" 
+                 data-120450="opacity: 1;"
+                 data-120550="opacity: .3;"
+                 data-120650="display:none"
+                        
+                 data-122000="display: block; opacity:0;"
+                 data-122500="opacity: 1;" 
+                 data-124000="opacity: 1;"
+                 data-124100="opacity: .3;"
+                 data-124200="display:none"
+                        
+                 data-126200="display: block; opacity:0;"
+                 data-126250="opacity: 1;" 
+                 data-127350="opacity: 1;"
+                 data-127400="opacity: .3;"
+                 data-127450="display:none">          
+                
+                <div class="text_Stella_Fische">
+                    <p  data-113750="display: none;"
+                        data-114250="display: block; opacity: .3;"
+                        data-114300="opacity: 1;"
+                        data-115000="opacity: 1;"
+                        data-115100="opacity: .3;"
+                        data-115200="display: none;">
+                        Na ihr zwei? Geht es euch gut?
+                    </p>                         
+                    <p  data-118950="display: none;"
+                        data-119150="display: block; opacity: .3;"
+                        data-120300="opacity: 1;"
+                        data-120350="opacity: 0.6;"
+                        data-120450="display: none;">
+                        Wovon sprecht ihr? Was ist dieses Zeug?
+                    </p>                        
+                    <p  data-122500="display: none;"
+                        data-122800="display: block; opacity: .5;"
+                        data-122900="opacity: 1;"
+                        data-123800="opacity: 1;"
+                        data-123900="opacity: .5"
+                        data-124000="display: none;">
+                        Oh, das hört sich aber gar nicht gut an.
+                    </p>                        
+                    <p  data-126250="display: none;"
+                        data-126300="display: block; opacity: 0.5"
+                        data-126400="opacity: 1;"
+                        data-127200="opacity: 1;"
+                        data-127300="opacity: .4;"
+                        data-127350="display: none;">
+                        Ja, das werde ich. Ich wünsche dir gute Besserung! Mal sehen wo die Flasche mich hinführen wird. Auf Wiedersehen ihr beiden!
+                    </p>        
+                </div> 
+                <!--end .text_Stella_fische -->
+            </div> 
+            <!--end #sprechblase_Stella_fische --> 
+            
+            <div id="sprechblase_fische"
+                 data-111000="display: block; opacity:0;"
+                 data-111500="opacity: 1;" 
+                 data-113000="opacity: 1;"
+                 data-113100="opacity: .3;"
+                 data-113200="display:none"
 
-          <p  data-113750="display: none;"
-              data-114250="display: block; opacity: .3;"
-              data-114300="opacity: 1;"
-              data-115000="opacity: 1;"
-              data-115100="opacity: .3;"
-              data-115200="display: none;">
-            Na ihr zwei? Geht es euch gut?
-          </p> 
-            
-          <p  data-118950="display: none;"
-              data-119150="display: block; opacity: .3;"
-              data-120300="opacity: 1;"
-              data-120350="opacity: 0.6;"
-              data-120450="display: none;">
-              Wovon sprecht ihr? Was ist dieses Zeug?
-          </p>
-            
-          <p  data-122500="display: none;"
-              data-122800="display: block; opacity: .5;"
-              data-122900="opacity: 1;"
-              data-123800="opacity: 1;"
-              data-123900="opacity: .5"
-              data-124000="display: none;">
-              Oh, das hört sich aber gar nicht gut an.
-          </p>
-            
-          <p  data-126250="display: none;"
-              data-126300="display: block; opacity: 0.5"
-              data-126400="opacity: 1;"
-              data-127200="opacity: 1;"
-              data-127300="opacity: .4;"
-              data-127350="display: none;">
-              Ja, das werde ich. Ich wünsche dir gute Besserung! Mal sehen wo die Flasche mich hinführen wird. Auf Wiedersehen ihr beiden!
-          </p>
- 
-      	</div> 
-         <!--end .text_Stella_fische -->
+                 data-115450="display: block;opacity: .3;"
+                 data-115950="opacity: 1;"
+                 data-118200="opacity: 1;"
+                 data-118350="opacity: .5;"
+                 data-118450="display: none;"
+                    
+                 data-120650="display:block; opacity: .3;"
+                 data-121150="opacity: 1;"
+                 data-121800="opacity: 1;"
+                 data-121900="opacity: .5;"
+                 data-122000="display: none;"
+                            
+                 data-124200="display:block; opacity: .3;"
+                 data-124500="opacity: 1;"
+                 data-126000="opacity: 1;"
+                 data-126100="opacity: .5;"
+                 data-126200="display: none;"
+                            
+                 data-127450="display:block; opacity: .3;"
+                 data-127500="opacity: 1;"
+                 data-129800="opacity: 1;"
+                 data-129850="opacity: .5;"
+                 data-129950="display: none;">       
 
-      </div> 
-       <!--end #sprechblase_Stella_fische -->
- 
-            
-      <div id="sprechblase_fische"
-           data-111000="display: block; opacity:0;"
-           data-111500="opacity: 1;" 
-           data-113000="opacity: 1;"
-           data-113100="opacity: .3;"
-           data-113200="display:none"
-
-           data-115450="display: block;opacity: .3;"
-           data-115950="opacity: 1;"
-           data-118200="opacity: 1;"
-           data-118350="opacity: .5;"
-           data-118450="display: none;"
-            
-           data-120650="display:block; opacity: .3;"
-           data-121150="opacity: 1;"
-           data-121800="opacity: 1;"
-           data-121900="opacity: .5;"
-           data-122000="display: none;"
-					
-           data-124200="display:block; opacity: .3;"
-           data-124500="opacity: 1;"
-           data-126000="opacity: 1;"
-           data-126100="opacity: .5;"
-           data-126200="display: none;"
-					
-           data-127450="display:block; opacity: .3;"
-           data-127500="opacity: 1;"
-           data-129800="opacity: 1;"
-           data-129850="opacity: .5;"
-           data-129950="display: none;">       
-
-        <div class="text_fische">
-
-            <p data-111610="display: none;"
-               data-111620="display: block;opacity: .3;"
-               data-111650="opacity: 1;"
-               data-112100="opacity: 1;"
-               data-112200="opacity: .3"
-               data-112250="display: none;">
-                Fisch 1:<br/> Die Bauchschmerzen werden immer stärker!
-            </p>
-            
-            <p data-112250="display: none;"
-               data-112260="display: block;opacity: .3;"
-               data-112290="opacity: 1;"
-               data-112740="opacity: 1;"
-               data-112900="opacity: .3"
-               data-113000="display: none;">
-                Fisch 2:<br/> Du isst ja auch den ganzen Tag. Das l… 
-            </p>
-            
-            <p data-115950="display: none;"
-               data-116000="display: block; opacity: .3;"
-               data-116100="opacity: 1;"
-               data-116600="opacity: 1;"
-               data-116650="opacity: .3"
-               data-116700="display: none;">
-                Fisch 1:<br/> Nein Stella, ich weiß einfach nicht was mit mir los ist. Seit Tagen habe ich Bauchschmerzen und einen Mordshunger obwohl ich genug esse.
-            </p> 
-            
-            <p data-116700="display:none;"
-               data-116750="display: block; opacity: .4;"
-               data-116850="opacity: 1;"
-               data-117300="opacity: 1;"
-               data-117400="opacity: .3;"
-               data-117450="display: none;">
-                Fisch 2: <br/>Ich habe dir ja gesagt du sollst dieses Zeug nicht essen. Bestimmt liegt es daran.
-            </p>
-            
-            <p data-117450="display: none;"
-               data-117500="display: block; opacity: .4;"
-               data-117600="opacity: 1;"
-               data-118200="opacity: 1"
-               data-118250="opacity: .3;"
-               data-118350="display: none;">
-                Fisch 1:<br/> Aber es sah so lecker aus. Und ich hatte so einen Hunger.
-            </p>  
-            
-            <p data-121150="display: none;"
-               data-121200="display: block; opacity: .4;"
-               data-121250="opacity: 1;"
-               data-121650="opacity: 1"
-               data-121700="opacity: .3;"
-               data-121800="display: none;">
-                Fisch 2:<br/>Es ist vermutlich Plastik. Bisher habe ich nur davon gehört. Es soll Schadstoffe anziehen und so dem Magen schaden. Diese Kügelchen sahen schon so verdächtig aus.
-            </p> 
-            
-            <p data-124500="display: none;"
-               data-124550="display: block; opacity: .4;"
-               data-124700="opacity: 1;"
-               data-125100="opacity: 1"
-               data-125150="opacity: .3;"
-               data-125250="display: none;">
-                Fisch 1: <br/> Die Schmerzen gehen aber wieder weg oder? 
-            </p>   
-            
-            <p data-125250="display: none;"
-               data-125350="display: block; opacity: .4;"
-               data-125400="opacity: 1;"
-               data-125850="opacity: 1"
-               data-125900="opacity: .3;"
-               data-126000="display: none;">
-                Fisch 2: <br/> Hoffen wir es. Achte du nur darauf das dir nicht dasselbe passiert wie unserem verfressenen Freund, Stella! 
-            </p>  
-            
-            <p data-127500="display: none;"
-               data-127600="display: block; opacity: .4;"
-               data-127700="opacity: 1;"
-               data-128500="opacity: 1"
-               data-128600="opacity: .3;"
-               data-128650="display: none;">
-                Fisch 1: <br/> Danke, ich hoffe wir sehen uns bald wieder!
-            </p> 
-            
-            <p data-128650="display: none;"
-               data-128750="display: block; opacity: .4;"
-               data-128850="opacity: 1;"
-               data-129650="opacity: 1"
-               data-129750="opacity: .3;"
-               data-129800="display: none;">
-                Fisch 2: <br/> Ja, wir sind gespannt darauf was du uns berichten wirst. Wir sehen uns!
-            </p>
-        </div> 
-         <!--  end .text_fische   -->
-			</div>
+                <div class="text_fische">
+                    <p  data-111610="display: none;"
+                        data-111620="display: block;opacity: .3;"
+                        data-111650="opacity: 1;"
+                        data-112100="opacity: 1;"
+                        data-112200="opacity: .3"
+                        data-112250="display: none;">
+                        Fisch 1:<br/> Die Bauchschmerzen werden immer stärker!
+                    </p>                    
+                    <p  data-112250="display: none;"
+                        data-112260="display: block;opacity: .3;"
+                        data-112290="opacity: 1;"
+                        data-112740="opacity: 1;"
+                        data-112900="opacity: .3"
+                        data-113000="display: none;">
+                        Fisch 2:<br/> Du isst ja auch den ganzen Tag. Das l… 
+                    </p>                    
+                    <p  data-115950="display: none;"
+                        data-116000="display: block; opacity: .3;"
+                        data-116100="opacity: 1;"
+                        data-116600="opacity: 1;"
+                        data-116650="opacity: .3"
+                        data-116700="display: none;">
+                        Fisch 1:<br/> Nein Stella, ich weiß einfach nicht was mit mir los ist. Seit Tagen habe ich Bauchschmerzen und einen Mordshunger obwohl ich genug esse.
+                    </p>                     
+                    <p  data-116700="display:none;"
+                        data-116750="display: block; opacity: .4;"
+                        data-116850="opacity: 1;"
+                        data-117300="opacity: 1;"
+                        data-117400="opacity: .3;"
+                        data-117450="display: none;">
+                        Fisch 2: <br/>Ich habe dir ja gesagt du sollst dieses Zeug nicht essen. Bestimmt liegt es daran.
+                    </p>                    
+                    <p  data-117450="display: none;"
+                        data-117500="display: block; opacity: .4;"
+                        data-117600="opacity: 1;"
+                        data-118200="opacity: 1"
+                        data-118250="opacity: .3;"
+                        data-118350="display: none;">
+                        Fisch 1:<br/> Aber es sah so lecker aus. Und ich hatte so einen Hunger.
+                    </p>                      
+                    <p  data-121150="display: none;"
+                        data-121200="display: block; opacity: .4;"
+                        data-121250="opacity: 1;"
+                        data-121650="opacity: 1"
+                        data-121700="opacity: .3;"
+                        data-121800="display: none;">
+                        Fisch 2:<br/>Es ist vermutlich Plastik. Bisher habe ich nur davon gehört. Es soll Schadstoffe anziehen und so dem Magen schaden. Diese Kügelchen sahen schon so verdächtig aus.
+                    </p>                     
+                    <p  data-124500="display: none;"
+                        data-124550="display: block; opacity: .4;"
+                        data-124700="opacity: 1;"
+                        data-125100="opacity: 1"
+                        data-125150="opacity: .3;"
+                        data-125250="display: none;">
+                        Fisch 1: <br/> Die Schmerzen gehen aber wieder weg oder? 
+                    </p>                      
+                    <p  data-125250="display: none;"
+                        data-125350="display: block; opacity: .4;"
+                        data-125400="opacity: 1;"
+                        data-125850="opacity: 1"
+                        data-125900="opacity: .3;"
+                        data-126000="display: none;">
+                        Fisch 2: <br/> Hoffen wir es. Achte du nur darauf das dir nicht dasselbe passiert wie unserem verfressenen Freund, Stella! 
+                    </p>                      
+                    <p  data-127500="display: none;"
+                        data-127600="display: block; opacity: .4;"
+                        data-127700="opacity: 1;"
+                        data-128500="opacity: 1"
+                        data-128600="opacity: .3;"
+                        data-128650="display: none;">
+                        Fisch 1: <br/> Danke, ich hoffe wir sehen uns bald wieder!
+                    </p>                     
+                    <p  data-128650="display: none;"
+                        data-128750="display: block; opacity: .4;"
+                        data-128850="opacity: 1;"
+                        data-129650="opacity: 1"
+                        data-129750="opacity: .3;"
+                        data-129800="display: none;">
+                        Fisch 2: <br/> Ja, wir sind gespannt darauf was du uns berichten wirst. Wir sehen uns!
+                    </p>
+                </div> 
+                <!--  end .text_fische   -->
+            </div>
             <!-- end # sprechblase_fische-->
+            <!-- end Sezene 4  -->
 
+            <!-- Szene 5: Plasitkinsel  -->
 			<div id="plastik_insel"
-						data-143000="display: none;"
-						data-143500="display: block; opacity: .3; transform: translateX(45vw);"
-						data-151000="opacity: 1; transform: translateX(-5vw);">            
-			</div>
-
+                 data-143000="display: none;"
+                 data-143500="display: block; opacity: .3; transform: translateX(45vw);"
+                 data-151000="opacity: 1; transform: translateX(-5vw);">            
+            </div>
+                
 			<div id="infotext"
                  data-31000="display: none;"
                  data-31200="display: block; opacity: .3;"
@@ -981,11 +987,11 @@
 				<div id="seifenblase_container">
                     <div id="seifenblase_text">
                         <p 	data-31500="display: none;"
-                                data-31700="display: block; opacity: .3;"
-                                data-31900="opacity: 1;"
-                                data-34000="opacity: 1;"
-                                data-34200="opacity: .3;"
-                                data-34400="display: none;">
+                            data-31700="display: block; opacity: .3;"
+                            data-31900="opacity: 1;"
+                            data-34000="opacity: 1;"
+                            data-34200="opacity: .3;"
+                            data-34400="display: none;">
                             Immer wieder verfangen sich Schildkröten, Robben, Delfine und   viele weitere Tiere in Müll.
                             Besonders oft geraten sie dabei an Plastikringe, Tüten und Fischernetze. 
                             Dieser Abfall schnürt den Meeresbewohnern ihre Körperteile ab, 
@@ -996,52 +1002,50 @@
                             des Panzers sowie ihrer Organe. Ein weiteres Problem stellen wasserundurchlässige Plastiktüten, 
                             Planen o.ä. dar. Diese können die Lebewesen an der Atmung hindern und zu Erstickung führen.  
                         </p> 
-
                         <p 	data-63500="display: none;"
-                                data-63700="display: block; opacity: .3;"
-                                data-63900="opacity: 1;"
-                                data-66000="opacity: 1;"
-                                data-66200="opacity: .3;"
-                                data-67000="display: none;">
-                                Ungefähr ¾ des Mülls im Ozean besteht aus Kunststoff. Um das mal ins Verhältnis zu setzen: 
-                                Jedes Jahr gelangen etwa 8 Mio. Tonnen Plastikmüll ins Meer, wobei ca. 80% davon aus dem Inland 
-                                kommt und erst durch anderes Gewässer oder Abflüsse in den Ozean gelangt. 
-                                Platz 1 in der Umweltverschmutzung belegt China, das allein für ca. 3.5 Mio. 
-                                Tonnen Plastikmüll im Jahr, der ins Meer gelangt verantwortlich ist. Dazu kommt, 
-                                dass Plastik nur sehr schwer biologisch abbaubar ist: eine einzige Plastikflasche zum Beispiel 
-                                benötigt bis zu 400 Jahre, um sich völlig zu zersetzen. Bis dahin häuft sich in den Meeren immer 
-                                mehr Müll an, wobei auch noch ungefähr 50% des gesamten Mülls und 70% des Plastikmülls auf den 
-                                Grund des Ozeans sinken und dort zusätzlichen Schaden anrichten.
+                            data-63700="display: block; opacity: .3;"
+                            data-63900="opacity: 1;"
+                            data-66000="opacity: 1;"
+                            data-66200="opacity: .3;"
+                            data-67000="display: none;">
+                            Ungefähr ¾ des Mülls im Ozean besteht aus Kunststoff. Um das mal ins Verhältnis zu setzen: 
+                            Jedes Jahr gelangen etwa 8 Mio. Tonnen Plastikmüll ins Meer, wobei ca. 80% davon aus dem Inland 
+                            kommt und erst durch anderes Gewässer oder Abflüsse in den Ozean gelangt. 
+                            Platz 1 in der Umweltverschmutzung belegt China, das allein für ca. 3.5 Mio. 
+                            Tonnen Plastikmüll im Jahr, der ins Meer gelangt verantwortlich ist. Dazu kommt, 
+                            dass Plastik nur sehr schwer biologisch abbaubar ist: eine einzige Plastikflasche zum Beispiel 
+                            benötigt bis zu 400 Jahre, um sich völlig zu zersetzen. Bis dahin häuft sich in den Meeren immer 
+                            mehr Müll an, wobei auch noch ungefähr 50% des gesamten Mülls und 70% des Plastikmülls auf den 
+                            Grund des Ozeans sinken und dort zusätzlichen Schaden anrichten.
                         </p>
-
-                         <p  data-101300="display: none;"
-                                data-101500="display: block; opacity: .3;"
-                                data-101700="opacity: 1;"
-                                data-104000="opacity: 1;"
-                                data-104200="opacity: .3;"
-                                data-104400="display: none;">
-                                Müll im Ozean schadet nicht nur den Tieren, sondern auch den Pflanzen;
-                                vor allem Korallen, die eine Heimat für viele Meeresbewohner bilden, 
-                                sind davon betroffen. Beispielsweise werden ganze Korallenriffe zerstört 
-                                durch Fischer-, bzw. Geisternetze, die sich darin verheddern.     Auch absinkender Schwermüll, wie Autoreifen oder Metallteile, die auf 
-                                Korallenriffen landen können diese schwer beschädigen und 
-                                unbewohnbar machen. So werden den Meereslebewesen durch die 
-                                Zerstörung der Pflanzenwelt nach und nach ihre Habitate zum Leben
-                                genommen. Aber auch Müll an der Wasseroberfläche kann die 
-                                darunterliegenden Pflanzen stark beeinträchtigen, da z.B. durch    Ölfilme 
-                                oder dichte Müllschichten kein Licht mehr unter die Oberfläche gelangt 
-                                und die Pflanzen an der Photosynthese hindert. Außerdem werden durch
-                                das Zersetzen von Kunststoffmüll Giftstoffe freigesetzt, die sowohl von 
-                                Tieren, als auch Pflanzen aufgenommen werden, und letztendlich auch 
-                                in unsere Nahrungskette gelangen. 
+                        <p  data-101300="display: none;"
+                            data-101500="display: block; opacity: .3;"
+                            data-101700="opacity: 1;"
+                            data-104000="opacity: 1;"
+                            data-104200="opacity: .3;"
+                            data-104400="display: none;">
+                            Müll im Ozean schadet nicht nur den Tieren, sondern auch den Pflanzen;
+                            vor allem Korallen, die eine Heimat für viele Meeresbewohner bilden, 
+                            sind davon betroffen. Beispielsweise werden ganze Korallenriffe zerstört 
+                            durch Fischer-, bzw. Geisternetze, die sich darin verheddern.     Auch absinkender Schwermüll, wie Autoreifen oder Metallteile, die auf 
+                            Korallenriffen landen können diese schwer beschädigen und 
+                            unbewohnbar machen. So werden den Meereslebewesen durch die 
+                            Zerstörung der Pflanzenwelt nach und nach ihre Habitate zum Leben
+                            genommen. Aber auch Müll an der Wasseroberfläche kann die 
+                            darunterliegenden Pflanzen stark beeinträchtigen, da z.B. durch    Ölfilme 
+                            oder dichte Müllschichten kein Licht mehr unter die Oberfläche gelangt 
+                            und die Pflanzen an der Photosynthese hindert. Außerdem werden durch
+                            das Zersetzen von Kunststoffmüll Giftstoffe freigesetzt, die sowohl von 
+                            Tieren, als auch Pflanzen aufgenommen werden, und letztendlich auch 
+                            in unsere Nahrungskette gelangen. 
                         </p> 
 
                         <p  data-135500="display: none;"
-                                data-135700="display: block; opacity: .3;"
-                                data-135900="opacity: 1;"
-                                data-138000="opacity: 1;"
-                                data-138200="opacity: .3;"
-                                data-138400="display: none;">
+                            data-135700="display: block; opacity: .3;"
+                            data-135900="opacity: 1;"
+                            data-138000="opacity: 1;"
+                            data-138200="opacity: .3;"
+                            data-138400="display: none;">
                             Ein weiteres Problem besteht darin, dass Seevögel, Delfine usw. 
                             Plastikteile für Nahrung halten und verschlucken. 
                             Dieses sammelt sich im Verdauungstrakt und es kann keine richtige Nahrung mehr 
@@ -1059,11 +1063,11 @@
                             welcher unter anderem Krebstiere verzehrt die zuvor Plankton zu sich nehmen. 
                         </p> 
                         <p  data-162500="display: none;"
-                                data-162700="display: block; opacity: .3;"
-                                data-162900="opacity: 1;"
-                                data-165000="opacity: 1;"
-                                data-165200="opacity: .3;"
-                                data-165400="display: none;">
+                            data-162700="display: block; opacity: .3;"
+                            data-162900="opacity: 1;"
+                            data-165000="opacity: 1;"
+                            data-165200="opacity: .3;"
+                            data-165400="display: none;">
                             Willkommen auf der Plastik Insel, oder ‚Great Pacific Garbage Patch‘, die größte der 
                             fünf sogenannten Müllstrudel auf der Welt. Wir befinden uns im Zentrum des Nordpazifikwirbels, 
                             zwischen Nordamerika und Asien. Normalerweise ist die Insel kaum sichtbar, da sie 
@@ -1079,46 +1083,50 @@
                         </p>
                     </div>
 				</div>
-      </div>
+            </div>
+            <!-- end #infotext -->
+            <!-- end Szene 5  -->
 			
-    </div> <!-- end #story_container -->
+        </div> <!-- end #story_container -->
 
-    <div id="ende" class="viewport"
-					data-168000="display: block; margin-top: 100vh;"
-          data-169000="margin-top: 0;">
+        <!-- Credits  -->
 
-      <div id="zitat" 
-            data-0="display:none;"
-            data-169500="display: block; opacity: 0;"
-            data-170500="opacity: 1;"
-            data-171500="opacity: 1;"
-            data-172500="opacity: 0;"
-            data-172600="display: none;">          
-          <h1>"Unser Planet ist unser Zuhause, unser einziges Zuhause. Wo sollen wir denn hingehen, wenn wir ihn zerstören?"<br>-Dalai Lama</h1>
-      </div>
-      
-       <div id="footer">
-        <h2 data-172800="margin-top: 50%; opacity: .3;"
-            data-173500="margin-top: 5%; opacity: 1; ">
-          Oceallax - Umweltschutz mit Stella
-        </h2>
+        <div id="ende" class="viewport"
+             data-168000="display: block; margin-top: 100vh;"
+             data-169000="margin-top: 0;">
 
-        <ul id="namen" 
-            >
-            <li>Alina Mitaper</li>
-            <li>Chuxiao Jiang</li>
-            <li>Julia Selzer</li>
-            <li>Mathuri Senthilnathan</li>
-            <li>Vanessa Abraham</li>
-            <li>Veronika Nikitina</li>
-        </ul>
+            <div id="zitat" 
+                    data-0="display:none;"
+                    data-169500="display: block; opacity: 0;"
+                    data-170500="opacity: 1;"
+                    data-171500="opacity: 1;"
+                    data-172500="opacity: 0;"
+                    data-172600="display: none;">          
+                <h1>"Unser Planet ist unser Zuhause, unser einziges Zuhause. Wo sollen wir denn hingehen, wenn wir ihn zerstören?"<br>-Dalai Lama</h1>
+            </div>
+        
+            <div id="footer">
+                <h2 data-172800="margin-top: 50%; opacity: .3;"
+                    data-173500="margin-top: 5%; opacity: 1; ">
+                    Oceallax - Umweltschutz mit Stella
+                </h2>
 
-        <ul id="links">
-            <li><a href="http://www.wwf.de/themen-projekte/meere-kuesten/unsere-ozeane-versinken-im-plastikmuell/" target="_blank"><img id="wwf" src="img/WWF.png"></a></li>
-            <li><a href="https://www.plasticoceans.org/film/" target="_blank"><img id="plasticocean" src="img/PlasticOcean.png"></a></li>
-        </ul>
-      </div> 
-    </div>
-	</main>
+                <ul id="namen">
+                    <li>Alina Mitaper</li>
+                    <li>Chuxiao Jiang</li>
+                    <li>Julia Selzer</li>
+                    <li>Mathuri Senthilnathan</li>
+                    <li>Vanessa Abraham</li>
+                    <li>Veronika Nikitina</li>
+                </ul>
+
+                <ul id="links">
+                    <li><a href="http://www.wwf.de/themen-projekte/meere-kuesten/unsere-ozeane-versinken-im-plastikmuell/" target="_blank"><img id="wwf" src="img/WWF.png"></a></li>
+                    <li><a href="https://www.plasticoceans.org/film/" target="_blank"><img id="plasticocean" src="img/PlasticOcean.png"></a></li>
+                </ul>
+            </div> 
+        </div>
+        <!-- end #ende  -->
+    </main>
 </body>
 </html>

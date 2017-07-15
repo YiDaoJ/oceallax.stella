@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-family: 'Pangolin', cursive;
+	font-family: "Pangolin", cursive;
 }
 
 /* ===== Loading Szene ===== */
@@ -23,7 +23,7 @@ body {
 }
 
 #loaded {
-  display: none;
+    display: none;
 }
 
 .viewport {
@@ -32,7 +32,7 @@ body {
 	height: 100vh;	
 }
 
-/* ===== intro ===== */
+/* ===== intro szene ===== */
 
 #intro {
 	display: none;
@@ -59,8 +59,7 @@ body {
 
 #intro_man2 {
 	background: url('../img/man2.png') no-repeat;
-    background-size: 20vw;
-	
+    background-size: 20vw;	
 }
 
 #intro_man3 {
@@ -89,7 +88,9 @@ body {
   top: 50vh;
 }
 
-/* Szene - Story beginnen */
+/* ++++++++++++ Geschichte beginnt +++++++++++++++ */
+
+/* ===== Umgebung unter Wasser ===== */
 
 #story_container {
 	display: none;  
@@ -115,9 +116,9 @@ body {
 }
 
 @keyframes floating_meer {
-  0%    {height: 92vh;} 
-  50%   {height: 90vh;}
-  100%  {height: 92vh;}
+    0%    {height: 92vh;} 
+    50%   {height: 90vh;}
+    100%  {height: 92vh;}
 }
 
 #boden {
@@ -154,14 +155,40 @@ body {
 	z-index: 5;
     animation: floating_fishschwarm 7s ease infinite;
     -webkit-animation: floating_fishschwarm 7s ease infinite;
+    -moz-animation: floating_fishschwarm 7s ease infinite;
 }
 
 @keyframes floating_fishschwarm {
-    0%    {margin-top: 40vh;} 
-    50%   {margin-top: 36vh;}
-    100%  {margin-top: 40vh;}
+    0%    {margin-top: 40vh; margin-left: 88vw} 
+    50%   {margin-top: 36vh; margin-left: 90vw}
+    100%  {margin-top: 40vh; margin-left: 88vw}
 }
 
+.bubble {
+	position: absolute;
+    left: 2vw;
+    width: 10vw;
+	height: 10vw;	
+	background: url('../img/bubble.png') no-repeat;
+	background-size: contain;
+	z-index:10;
+    animation: bubble_up 5s linear infinite;
+    -webkit-animation: bubble_up 5s linear infinite;
+    -moz-animation: bubble_up 5s linear infinite;
+}   
+
+@keyframes bubble_up {
+    0%    {background-size: 5%; bottom: -20vh;} 
+    25%   {background-size: 12%; bottom: -15vh; opacity: .8;}
+    50%   {background-size: 20%; bottom: -7vh; opacity: .6;}
+    75%   {background-size: 28%; bottom: 3vh; opacity: .5;}
+    100%  {background-size: 38%; bottom: 15vh; opacity: .3;} 
+}
+
+#bubbles div:last-child{
+    margin-left: 0.5vw;
+    margin-bottom: 0.8vw;
+}
 
 #stella {
 	display: block;
@@ -173,7 +200,7 @@ body {
 	background: url('../img/Stella.png') no-repeat;
 	background-size: contain;
 	z-index:20;
-     animation: floating_tiere 5s linear infinite;
+    animation: floating_tiere 5s linear infinite;
     -webkit-animation: floating_tiere 5s linear infinite;
     -moz-animation: floating_tiere 5s linear infinite; 
 }
@@ -193,6 +220,7 @@ body {
     background-size: contain; 
     animation: floating_flasche 4s linear infinite;
     -webkit-animation: floating_flasche 4s linear infinite;
+    -moz-animation: floating_flasche 4s linear infinite;
 }
 
 @keyframes floating_flasche {
@@ -200,6 +228,8 @@ body {
     50%   {bottom: 70vh}
     100%  {bottom: 67vh}
 }
+
+/* ===== Stellas Gedanken ===== */
 
 #stella_gedanken {
 	position: absolute;	
@@ -244,7 +274,7 @@ body {
     font-size: 2vw;
 } 
 
-/* Szene 1: Gespraech mit Schildkroete */
+/* ===== Dialog mit Schildkroete ===== */
 
 #schildkroete{
     position: absolute;
@@ -361,7 +391,7 @@ body {
     line-height: 2vw; 
 }
 
-/* Szene 2 - Seestern */
+/* ===== Dialog mit Seestern ===== */
 #seestern{
     position: absolute;
     bottom: -2%;
@@ -396,7 +426,6 @@ body {
     margin-top: 0.8vw;
 } 
 
-
 #sprechblase_Seestern {
     left: 38vw;
     bottom: 18vw;
@@ -405,7 +434,6 @@ body {
 .text_Seestern {
     line-height: 2.2vw;
 }
-
 
 #sprechblase_Seestern .text_Seestern p:first-child {
     padding-top: 1vw;
@@ -424,9 +452,7 @@ body {
     line-height: 1.9vw;
 }
 
-
-
-/* koralle */
+/* ===== Dialog mit Koralle ===== */
 
 #koralle{
     position: absolute;
@@ -487,7 +513,7 @@ body {
 }
 
 
-/* fische */
+/* ===== Dialog mit Ffische ===== */
 #fische {
     position: absolute;
     bottom: 23%;
@@ -517,7 +543,6 @@ body {
     margin-top: -1.4vw;
     font-size: 1.5vw;
     line-height: 2.2vw;
-
 } 
 
 #sprechblase_fische {
@@ -553,8 +578,8 @@ body {
     font-size: 1.6vw;
 }
 
+/* ===== Plastikinsel ===== */
 
-/* insel */
 #plastik_insel {
     position:absolute;
     bottom: 65%;
@@ -566,6 +591,7 @@ body {
     z-index:18;
     animation: floating_insel 7s linear infinite;
     -webkit-animation: floating_insel 7s linear infinite;
+    -moz-animation: floating_insel 7s linear infinite;
 }
 
 @keyframes floating_insel {
@@ -574,7 +600,7 @@ body {
     100%  {bottom: 65%}
 }
 
-/*infotext*/
+/* ===== Infotext =====*/
 
 #infotext {
     position:absolute;     
@@ -613,19 +639,21 @@ body {
     font-size: 1.15vw;
     line-height: 1.75vw;
 }
+
 #seifenblase_container p:last-child {
     padding-top: 1.5vw;
     font-size: 1.2vw;
     line-height: 1.8vw;
 }
 
+/* ++++++++++++ Geschichte endet +++++++++++++++ */
 
-/* end seite */
+/* Credit */
 #ende {
-  display: none;
-  background: url(../img/Schatzkarte1.jpg) no-repeat center;
-  background-attachment: fixed;
-  background-size: cover;
+    display: none;
+    background: url(../img/Schatzkarte1.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #ende h1 {
@@ -706,6 +734,8 @@ body {
     border-radius: 8px;
 }
 
+/* ++++++++++++ Responsiv +++++++++++++++ */
+
 @media only screen and (max-width: 960px) {
 #seifenblase_container {
     /* background-color: red;
@@ -743,3 +773,11 @@ body {
     }
 */
 } 
+
+/* ++++++++++++ Font +++++++++++++++ */
+@font-face {
+    font-family: "Pangolin";
+    src: url('../font/Pangolin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

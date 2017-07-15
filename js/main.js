@@ -1,13 +1,15 @@
 $(document).ready(function(){
-	var s = skrollr.init();	
-  var bubbleAudio = $('#bubble_sound').get(0);
-  window.onscroll = playAudio;
 
-  
-  function playAudio() {
-    console.log(window.pageYOffset);
+  var s = skrollr.init();	
+
+  // Variable, um dieses DOM-Element von Audio zu speichern
+  var bubbleAudio = $('#bubble_sound').get(0);
+
+  // Event Scroll löst anonyme Callback-Funktion aus.
+  $(window).scroll(function() {
+
+    // console.log(window.pageYOffset);
     if(window.pageYOffset > 31000 && window.pageYOffset < 34500) {
-      // console.log("test");
       bubbleAudio.play();
     } else if (window.pageYOffset > 63000 && window.pageYOffset < 67000) {
       bubbleAudio.play();
@@ -20,10 +22,11 @@ $(document).ready(function(){
     } else {
       bubbleAudio.pause();
     }
-  }  
+  });
+
 });
 
-
+// Funktion, um Ladenstatus zu überprüfen
 function loadingCheck() {
   if (document.readyState != "complete") {
     showIntro();
@@ -34,6 +37,7 @@ function loadingCheck() {
   }
 }
 
+// Funktion, um Intro-Szene darzustellen
 function showIntro() {
   $('#intro').fadeIn('slow', function() {
     $(this).css('display', 'block'); 
