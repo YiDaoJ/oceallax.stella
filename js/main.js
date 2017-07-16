@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var s = skrollr.init();	
 
-  // Variable, um dieses DOM-Element von Audio zu speichern
+  // Variable, um DOM-Element von Audio zu speichern
   var bubbleAudio = $('#bubble_sound').get(0);
 
   // Event Scroll löst anonyme Callback-Funktion aus.
@@ -29,20 +29,10 @@ $(document).ready(function(){
 // Funktion, um Ladenstatus zu überprüfen
 function loadingCheck() {
   if (document.readyState != "complete") {
-    showIntro();
-    window.setTimeout(loadingCheck, 10000);    
-  }
-  else {
+    window.setTimeout(loadingCheck, 1000);    
+  } else {
     document.getElementById('loading').id = 'loaded';
   }
-}
-
-// Funktion, um Intro-Szene darzustellen
-function showIntro() {
-  $('#intro').fadeIn('slow', function() {
-    $(this).css('display', 'block'); 
-    $('#loading').css('display','none');
-  });				
 }
 
 
