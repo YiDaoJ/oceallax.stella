@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 });
 
-// Funktion, um Ladenstatus zu überprüfen
+// // Funktion, um Ladenstatus zu überprüfen
 function loadingCheck() {
   if (document.readyState != "complete") {
     window.setTimeout(loadingCheck, 1000);    
