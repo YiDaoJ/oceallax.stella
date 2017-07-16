@@ -702,15 +702,16 @@ body {
 
 #links {
     position: relative;
-    width: 420px;
-    height: 20vh;
-    margin: auto;
+    margin-left: 34.5%;
+    padding: 0;
     list-style: none;
+    width: 100%;
+    margin-top: 3%;
 }
 
 #links li {
     float: left;
-    margin: auto 5vw;
+    margin-left: 7%;
     width: 80px;
     height: 80px;
     background-color: white;
@@ -816,7 +817,7 @@ body {
     }
 
     #links {
-        padding-left: 15vw;
+         margin-left: 30vw; 
     }
 
 } 
